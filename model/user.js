@@ -51,30 +51,6 @@ const schema = new Schema(
       ref:'user'
     },
 
-    shippingAddress:[{
-      _id:false,
-      pincode:{ type:String },
-      address1:{ type:String },
-      address2:{ type:String },
-      landmark:{ type:String },
-      city:{ type:String },
-      isDefault:{ type:Boolean },
-      state:{ type:String },
-      addressType:{ type:String },
-      fullName:{ type:String },
-      mobile:{
-        type:Number,
-        min:10,
-        max:10
-      },
-      addressNo:{ type:Number }
-    }],
-
-    wishlist:[{
-      _id:false,
-      productId:{ type:String }
-    }],
-
     userType:{
       type:Number,
       enum:convertObjectToEnum(USER_TYPES),

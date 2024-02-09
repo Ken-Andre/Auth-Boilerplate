@@ -5,7 +5,6 @@
 
 let Tripuser = require('../model/tripuser');
 let User = require('../model/user');
-let Category = require('../model/category');
 let Banner = require('../model/banner');
 let State = require('../model/state');
 let UserTokens = require('../model/userTokens');
@@ -36,9 +35,6 @@ const deleteUser = async (filter) =>{
       const userFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
       const userCnt = await dbService.deleteMany(User,userFilter);
 
-      const categoryFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
-      const categoryCnt = await dbService.deleteMany(Category,categoryFilter);
-
       const bannerFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } },{ sellerId : { $in : user } }] };
       const bannerCnt = await dbService.deleteMany(Banner,bannerFilter);
 
@@ -64,7 +60,6 @@ const deleteUser = async (filter) =>{
       let response = {
         tripuser :tripuserCnt,
         user :userCnt + deleted,
-        category :categoryCnt,
         banner :bannerCnt,
         state :stateCnt,
         userTokens :userTokensCnt,
@@ -76,27 +71,6 @@ const deleteUser = async (filter) =>{
       return response; 
     } else {
       return {  user : 0 };
-    }
-
-  } catch (error){
-    throw new Error(error.message);
-  }
-};
-
-const deleteCategory = async (filter) =>{
-  try {
-    let category = await dbService.findMany(Category,filter);
-    if (category && category.length){
-      category = category.map((obj) => obj.id);
-
-      const categoryFilter = { $or: [{ parentCategoryId : { $in : category } }] };
-      const categoryCnt = await dbService.deleteMany(Category,categoryFilter);
-
-      let deleted  = await dbService.deleteMany(Category,filter);
-      let response = { category :categoryCnt + deleted, };
-      return response; 
-    } else {
-      return {  category : 0 };
     }
 
   } catch (error){
@@ -218,9 +192,6 @@ const countUser = async (filter) =>{
       const userFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
       const userCnt =  await dbService.count(User,userFilter);
 
-      const categoryFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
-      const categoryCnt =  await dbService.count(Category,categoryFilter);
-
       const bannerFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } },{ sellerId : { $in : user } }] };
       const bannerCnt =  await dbService.count(Banner,bannerFilter);
 
@@ -245,7 +216,6 @@ const countUser = async (filter) =>{
       let response = {
         tripuser : tripuserCnt,
         user : userCnt,
-        category : categoryCnt,
         banner : bannerCnt,
         state : stateCnt,
         userTokens : userTokensCnt,
@@ -257,25 +227,6 @@ const countUser = async (filter) =>{
       return response; 
     } else {
       return {  user : 0 };
-    }
-  } catch (error){
-    throw new Error(error.message);
-  }
-};
-
-const countCategory = async (filter) =>{
-  try {
-    let category = await dbService.findMany(Category,filter);
-    if (category && category.length){
-      category = category.map((obj) => obj.id);
-
-      const categoryFilter = { $or: [{ parentCategoryId : { $in : category } }] };
-      const categoryCnt =  await dbService.count(Category,categoryFilter);
-
-      let response = { category : categoryCnt, };
-      return response; 
-    } else {
-      return {  category : 0 };
     }
   } catch (error){
     throw new Error(error.message);
@@ -392,9 +343,6 @@ const softDeleteUser = async (filter,updateBody) =>{
       const userFilter = { '$or': [{ addedBy : { '$in' : user } },{ updatedBy : { '$in' : user } }] };
       const userCnt = await dbService.updateMany(User,userFilter,updateBody);
 
-      const categoryFilter = { '$or': [{ addedBy : { '$in' : user } },{ updatedBy : { '$in' : user } }] };
-      const categoryCnt = await dbService.updateMany(Category,categoryFilter,updateBody);
-
       const bannerFilter = { '$or': [{ addedBy : { '$in' : user } },{ updatedBy : { '$in' : user } },{ sellerId : { '$in' : user } }] };
       const bannerCnt = await dbService.updateMany(Banner,bannerFilter,updateBody);
 
@@ -420,7 +368,6 @@ const softDeleteUser = async (filter,updateBody) =>{
       let response = {
         tripuser :tripuserCnt,
         user :userCnt + updated,
-        category :categoryCnt,
         banner :bannerCnt,
         state :stateCnt,
         userTokens :userTokensCnt,
@@ -432,26 +379,6 @@ const softDeleteUser = async (filter,updateBody) =>{
       return response;
     } else {
       return {  user : 0 };
-    }
-  } catch (error){
-    throw new Error(error.message);
-  }
-};
-
-const softDeleteCategory = async (filter,updateBody) =>{  
-  try {
-    let category = await dbService.findMany(Category,filter, { id:1 });
-    if (category.length){
-      category = category.map((obj) => obj.id);
-
-      const categoryFilter = { '$or': [{ parentCategoryId : { '$in' : category } }] };
-      const categoryCnt = await dbService.updateMany(Category,categoryFilter,updateBody);
-      let updated = await dbService.updateMany(Category,filter,updateBody);
-
-      let response = { category :categoryCnt + updated, };
-      return response;
-    } else {
-      return {  category : 0 };
     }
   } catch (error){
     throw new Error(error.message);
@@ -552,7 +479,6 @@ const softDeleteUserRole = async (filter,updateBody) =>{
 module.exports = {
   deleteTripuser,
   deleteUser,
-  deleteCategory,
   deleteBanner,
   deleteState,
   deleteUserTokens,
@@ -562,7 +488,6 @@ module.exports = {
   deleteUserRole,
   countTripuser,
   countUser,
-  countCategory,
   countBanner,
   countState,
   countUserTokens,
@@ -572,7 +497,6 @@ module.exports = {
   countUserRole,
   softDeleteTripuser,
   softDeleteUser,
-  softDeleteCategory,
   softDeleteBanner,
   softDeleteState,
   softDeleteUserTokens,

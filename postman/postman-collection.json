@@ -1,7 +1,7 @@
 {
   "info": {
     "name": "authboilerplate",
-    "_postman_id": "7bedf845-13a0-4dcf-8015-7991c8276d83",
+    "_postman_id": "89fff7d7-3072-476f-a56d-894a978c5b74",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -50,7 +50,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d3f9\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-03-17T18:39:44.376Z\",\n    \"updatedAt\": \"2025-01-19T13:22:37.300Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba4483\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-12-21T08:58:16.389Z\",\n    \"updatedAt\": \"2025-01-04T17:29:54.360Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -76,7 +76,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"user\": \"65c5df6c68ac630955c3d3f5\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"Dollar\",\n      \"kilometer\": 232\n    }\n  ],\n  \"date\": \"Forward\"\n}"
+                  "raw": "{\n  \"user\": \"65c5ebb359685409e9ba447f\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"violet\",\n      \"kilometer\": 576\n    }\n  ],\n  \"date\": \"Shores\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -99,7 +99,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d3f7\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-03-17T18:39:44.376Z\",\n    \"updatedAt\": \"2025-01-19T13:22:37.300Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba4481\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-12-21T08:58:16.389Z\",\n    \"updatedAt\": \"2025-01-04T17:29:54.360Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -148,7 +148,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"user\": \"65c5df6c68ac630955c3d3f5\",\n        \"trip\": [\n          {\n            \"_id\": false,\n            \"endLocation\": \"Dollar\",\n            \"kilometer\": 232\n          }\n        ],\n        \"date\": \"Forward\",\n        \"id\": \"65c5df6c68ac630955c3d3f8\",\n        \"isDeleted\": false,\n        \"createdAt\": \"2024-03-17T18:39:44.376Z\",\n        \"updatedAt\": \"2025-01-19T13:22:37.300Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"user\": \"65c5ebb359685409e9ba447f\",\n        \"trip\": [\n          {\n            \"_id\": false,\n            \"endLocation\": \"violet\",\n            \"kilometer\": 576\n          }\n        ],\n        \"date\": \"Shores\",\n        \"id\": \"65c5ebb359685409e9ba4482\",\n        \"isDeleted\": false,\n        \"createdAt\": \"2024-12-21T08:58:16.389Z\",\n        \"updatedAt\": \"2025-01-04T17:29:54.360Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -223,7 +223,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"user\": \"65c5df6c68ac630955c3d3f5\",\n      \"trip\": [\n        {\n          \"_id\": false,\n          \"endLocation\": \"Dollar\",\n          \"kilometer\": 232\n        }\n      ],\n      \"date\": \"Forward\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"user\": \"65c5ebb359685409e9ba447f\",\n      \"trip\": [\n        {\n          \"_id\": false,\n          \"endLocation\": \"violet\",\n          \"kilometer\": 576\n        }\n      ],\n      \"date\": \"Shores\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -321,7 +321,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"user\": \"65c5df6c68ac630955c3d3f5\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"Dollar\",\n      \"kilometer\": 232\n    }\n  ],\n  \"date\": \"Forward\"\n}"
+                  "raw": "{\n  \"user\": \"65c5ebb359685409e9ba447f\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"violet\",\n      \"kilometer\": 576\n    }\n  ],\n  \"date\": \"Shores\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -344,7 +344,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d3fa\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-03-17T18:39:44.376Z\",\n    \"updatedAt\": \"2025-01-19T13:22:37.300Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba4484\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-12-21T08:58:16.389Z\",\n    \"updatedAt\": \"2025-01-04T17:29:54.360Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -393,7 +393,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d3fb\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-03-17T18:39:44.376Z\",\n    \"updatedAt\": \"2025-01-19T13:22:37.300Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba4485\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-12-21T08:58:16.389Z\",\n    \"updatedAt\": \"2025-01-04T17:29:54.360Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -714,7 +714,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d410\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-28T04:55:43.216Z\",\n    \"updatedAt\": \"2024-07-18T04:06:12.736Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba449a\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-11T04:34:03.693Z\",\n    \"updatedAt\": \"2024-06-25T00:24:08.473Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -763,7 +763,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d415\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-28T04:55:43.216Z\",\n    \"updatedAt\": \"2024-07-18T04:06:12.736Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba449f\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-11T04:34:03.693Z\",\n    \"updatedAt\": \"2024-06-25T00:24:08.473Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -789,7 +789,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\",\n  \"userType\": 1\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\",\n  \"userType\": 1\n}"
                 },
                 "description": "",
                 "auth": {
@@ -812,7 +812,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d40d\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-28T04:55:43.216Z\",\n    \"updatedAt\": \"2024-07-18T04:06:12.736Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba4497\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-11T04:34:03.693Z\",\n    \"updatedAt\": \"2024-06-25T00:24:08.473Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -838,7 +838,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"username\": \"Alfonso43\",\n      \"password\": \"1GLz_3R_ZtdGEkh\",\n      \"email\": \"Misael.Schiller@yahoo.com\",\n      \"name\": \"Glen McKenzie\",\n      \"shippingAddress\": [\n        {\n          \"_id\": false,\n          \"pincode\": \"Markets\",\n          \"address1\": \"Chips\",\n          \"address2\": \"PNG\",\n          \"landmark\": \"motivating\",\n          \"city\": \"maroon\",\n          \"isDefault\": true,\n          \"state\": \"Operations\",\n          \"addressType\": \"monitor\",\n          \"fullName\": \"intranet\",\n          \"mobile\": 679,\n          \"addressNo\": 532\n        }\n      ],\n      \"wishlist\": [\n        {\n          \"_id\": false,\n          \"productId\": \"salmon\"\n        }\n      ],\n      \"mobileNo\": \"(676) 040-0718\",\n      \"userType\": 1\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"username\": \"Ola.Smith87\",\n      \"password\": \"1vxnf_23KwoKxDW\",\n      \"email\": \"Amira37@gmail.com\",\n      \"name\": \"Jessie Thiel IV\",\n      \"mobileNo\": \"(347) 589-4877\",\n      \"userType\": 1\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -910,7 +910,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"username\": \"Alfonso43\",\n        \"email\": \"Misael.Schiller@yahoo.com\",\n        \"name\": \"Glen McKenzie\",\n        \"shippingAddress\": [\n          {\n            \"_id\": false,\n            \"pincode\": \"Markets\",\n            \"address1\": \"Chips\",\n            \"address2\": \"PNG\",\n            \"landmark\": \"motivating\",\n            \"city\": \"maroon\",\n            \"isDefault\": true,\n            \"state\": \"Operations\",\n            \"addressType\": \"monitor\",\n            \"fullName\": \"intranet\",\n            \"mobile\": 679,\n            \"addressNo\": 532\n          }\n        ],\n        \"wishlist\": [\n          {\n            \"_id\": false,\n            \"productId\": \"salmon\"\n          }\n        ],\n        \"mobileNo\": \"(676) 040-0718\",\n        \"userType\": 1,\n        \"id\": \"65c5df6c68ac630955c3d40f\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-06-28T04:55:43.216Z\",\n        \"updatedAt\": \"2024-07-18T04:06:12.736Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"username\": \"Ola.Smith87\",\n        \"email\": \"Amira37@gmail.com\",\n        \"name\": \"Jessie Thiel IV\",\n        \"mobileNo\": \"(347) 589-4877\",\n        \"userType\": 1,\n        \"id\": \"65c5ebb359685409e9ba4499\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-12-11T04:34:03.693Z\",\n        \"updatedAt\": \"2024-06-25T00:24:08.473Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -1034,7 +1034,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\",\n  \"userType\": 1\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\",\n  \"userType\": 1\n}"
                 },
                 "description": "",
                 "auth": {
@@ -1057,7 +1057,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d411\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-28T04:55:43.216Z\",\n    \"updatedAt\": \"2024-07-18T04:06:12.736Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba449b\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-11T04:34:03.693Z\",\n    \"updatedAt\": \"2024-06-25T00:24:08.473Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -1106,7 +1106,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d412\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-28T04:55:43.216Z\",\n    \"updatedAt\": \"2024-07-18T04:06:12.736Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba449c\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-11T04:34:03.693Z\",\n    \"updatedAt\": \"2024-06-25T00:24:08.473Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -1279,7 +1279,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\",\n  \"userType\": 1\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\",\n  \"userType\": 1\n}"
                 },
                 "description": "",
                 "auth": {
@@ -1302,7 +1302,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d414\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-28T04:55:43.216Z\",\n    \"updatedAt\": \"2024-07-18T04:06:12.736Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba449e\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-11T04:34:03.693Z\",\n    \"updatedAt\": \"2024-06-25T00:24:08.473Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -1401,7 +1401,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"id\": \"65c5df6c68ac630955c3d416\",\n    \"loginRetryLimit\": 0,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWRlZDVjMGFjMjAxMmFjMDI4ODkxZiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjkzNTEyNzAsImV4cCI6MTYyOTk1MTI3MH0.BJ-WKjNYeFDQ4pn8kfli5gwn6GLz_c3voFht20Agj9k\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-03-02T21:52:53.905Z\",\n    \"updatedAt\": \"2025-01-02T13:54:26.694Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"id\": \"65c5ebb359685409e9ba44a0\",\n    \"loginRetryLimit\": 0,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWRlZDVjMGFjMjAxMmFjMDI4ODkxZiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjkzNTEyNzAsImV4cCI6MTYyOTk1MTI3MH0.BJ-WKjNYeFDQ4pn8kfli5gwn6GLz_c3voFht20Agj9k\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-08-23T08:46:20.994Z\",\n    \"updatedAt\": \"2024-11-07T23:24:08.623Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -1427,7 +1427,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\"\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\"\n}"
                 },
                 "description": "",
                 "auth": {}
@@ -1445,7 +1445,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"id\": \"65c5df6c68ac630955c3d416\",\n    \"loginRetryLimit\": 0,\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-03-02T21:52:53.905Z\",\n    \"updatedAt\": \"2025-01-02T13:54:26.694Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"id\": \"65c5ebb359685409e9ba44a0\",\n    \"loginRetryLimit\": 0,\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-08-23T08:46:20.994Z\",\n    \"updatedAt\": \"2024-11-07T23:24:08.623Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -1647,11 +1647,6 @@
           ]
         },
         {
-          "name": "category",
-          "description": "category Model APIs",
-          "item": []
-        },
-        {
           "name": "banner",
           "description": "banner Model APIs",
           "item": [
@@ -1692,7 +1687,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d42f\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-24T11:56:41.084Z\",\n    \"updatedAt\": \"2024-10-07T06:35:04.838Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44b7\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-05-13T05:06:08.408Z\",\n    \"updatedAt\": \"2024-03-23T21:31:23.334Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -1718,7 +1713,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"bannerTitle\": \"parsing\",\n  \"alternateTitle\": \"Refined\",\n  \"startDate\": \"2024-06-27T12:17:39.389Z\",\n  \"endDate\": \"2024-05-12T05:48:36.227Z\",\n  \"redirectLink\": \"Operative\",\n  \"sellerId\": \"65c5df6c68ac630955c3d42a\"\n}"
+                  "raw": "{\n  \"bannerTitle\": \"Future\",\n  \"alternateTitle\": \"Incredible\",\n  \"startDate\": \"2024-10-03T01:56:25.091Z\",\n  \"endDate\": \"2025-02-01T05:42:39.497Z\",\n  \"redirectLink\": \"bandwidth-monitored\",\n  \"sellerId\": \"65c5ebb359685409e9ba44b2\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -1741,7 +1736,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d42c\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-24T11:56:41.084Z\",\n    \"updatedAt\": \"2024-10-07T06:35:04.838Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44b4\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-05-13T05:06:08.408Z\",\n    \"updatedAt\": \"2024-03-23T21:31:23.334Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -1767,7 +1762,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"bannerTitle\": \"parsing\",\n      \"alternateTitle\": \"Refined\",\n      \"startDate\": \"2024-06-27T12:17:39.389Z\",\n      \"endDate\": \"2024-05-12T05:48:36.227Z\",\n      \"redirectLink\": \"Operative\",\n      \"sellerId\": \"65c5df6c68ac630955c3d42a\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"bannerTitle\": \"Future\",\n      \"alternateTitle\": \"Incredible\",\n      \"startDate\": \"2024-10-03T01:56:25.091Z\",\n      \"endDate\": \"2025-02-01T05:42:39.497Z\",\n      \"redirectLink\": \"bandwidth-monitored\",\n      \"sellerId\": \"65c5ebb359685409e9ba44b2\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -1839,7 +1834,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"bannerTitle\": \"parsing\",\n        \"alternateTitle\": \"Refined\",\n        \"startDate\": \"2024-06-27T12:17:39.389Z\",\n        \"endDate\": \"2024-05-12T05:48:36.227Z\",\n        \"redirectLink\": \"Operative\",\n        \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n        \"id\": \"65c5df6c68ac630955c3d42e\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-06-24T11:56:41.084Z\",\n        \"updatedAt\": \"2024-10-07T06:35:04.838Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"bannerTitle\": \"Future\",\n        \"alternateTitle\": \"Incredible\",\n        \"startDate\": \"2024-10-03T01:56:25.091Z\",\n        \"endDate\": \"2025-02-01T05:42:39.497Z\",\n        \"redirectLink\": \"bandwidth-monitored\",\n        \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n        \"id\": \"65c5ebb359685409e9ba44b6\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-05-13T05:06:08.408Z\",\n        \"updatedAt\": \"2024-03-23T21:31:23.334Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -1963,7 +1958,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"bannerTitle\": \"parsing\",\n  \"alternateTitle\": \"Refined\",\n  \"startDate\": \"2024-06-27T12:17:39.389Z\",\n  \"endDate\": \"2024-05-12T05:48:36.227Z\",\n  \"redirectLink\": \"Operative\",\n  \"sellerId\": \"65c5df6c68ac630955c3d42a\"\n}"
+                  "raw": "{\n  \"bannerTitle\": \"Future\",\n  \"alternateTitle\": \"Incredible\",\n  \"startDate\": \"2024-10-03T01:56:25.091Z\",\n  \"endDate\": \"2025-02-01T05:42:39.497Z\",\n  \"redirectLink\": \"bandwidth-monitored\",\n  \"sellerId\": \"65c5ebb359685409e9ba44b2\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -1986,7 +1981,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d430\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-24T11:56:41.084Z\",\n    \"updatedAt\": \"2024-10-07T06:35:04.838Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44b8\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-05-13T05:06:08.408Z\",\n    \"updatedAt\": \"2024-03-23T21:31:23.334Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -2035,7 +2030,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d431\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-24T11:56:41.084Z\",\n    \"updatedAt\": \"2024-10-07T06:35:04.838Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44b9\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-05-13T05:06:08.408Z\",\n    \"updatedAt\": \"2024-03-23T21:31:23.334Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -2281,7 +2276,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Cambridgeshire\",\n    \"id\": \"65c5df6c68ac630955c3d445\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2025-01-06T11:59:38.118Z\",\n    \"updatedAt\": \"2024-03-25T15:04:50.705Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Georgia\",\n    \"id\": \"65c5ebb359685409e9ba44cd\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-23T16:56:10.369Z\",\n    \"updatedAt\": \"2024-02-28T02:27:51.354Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -2307,7 +2302,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"stateName\": \"Cambridgeshire\"\n}"
+                  "raw": "{\n  \"stateName\": \"Georgia\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -2330,7 +2325,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Cambridgeshire\",\n    \"id\": \"65c5df6c68ac630955c3d442\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2025-01-06T11:59:38.118Z\",\n    \"updatedAt\": \"2024-03-25T15:04:50.705Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Georgia\",\n    \"id\": \"65c5ebb359685409e9ba44ca\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-23T16:56:10.369Z\",\n    \"updatedAt\": \"2024-02-28T02:27:51.354Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -2356,7 +2351,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"stateName\": \"Cambridgeshire\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"stateName\": \"Georgia\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -2423,7 +2418,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"stateName\": \"Cambridgeshire\",\n        \"id\": \"65c5df6c68ac630955c3d444\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2025-01-06T11:59:38.118Z\",\n        \"updatedAt\": \"2024-03-25T15:04:50.705Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"stateName\": \"Georgia\",\n        \"id\": \"65c5ebb359685409e9ba44cc\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-02-23T16:56:10.369Z\",\n        \"updatedAt\": \"2024-02-28T02:27:51.354Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -2537,7 +2532,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"stateName\": \"Cambridgeshire\"\n}"
+                  "raw": "{\n  \"stateName\": \"Georgia\"\n}"
                 },
                 "description": "",
                 "auth": {}
@@ -2555,7 +2550,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Cambridgeshire\",\n    \"id\": \"65c5df6c68ac630955c3d446\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2025-01-06T11:59:38.118Z\",\n    \"updatedAt\": \"2024-03-25T15:04:50.705Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Georgia\",\n    \"id\": \"65c5ebb359685409e9ba44ce\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-23T16:56:10.369Z\",\n    \"updatedAt\": \"2024-02-28T02:27:51.354Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -2599,7 +2594,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Cambridgeshire\",\n    \"id\": \"65c5df6c68ac630955c3d447\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2025-01-06T11:59:38.118Z\",\n    \"updatedAt\": \"2024-03-25T15:04:50.705Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Georgia\",\n    \"id\": \"65c5ebb359685409e9ba44cf\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-23T16:56:10.369Z\",\n    \"updatedAt\": \"2024-02-28T02:27:51.354Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -2830,7 +2825,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"name\": \"Allen Muller\",\n    \"code\": \"transmit\",\n    \"weight\": 671,\n    \"id\": \"65c5df6c68ac630955c3d459\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-17T08:25:01.480Z\",\n    \"updatedAt\": \"2024-07-17T16:41:31.298Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"name\": \"Holly Armstrong\",\n    \"code\": \"Administrator\",\n    \"weight\": 103,\n    \"id\": \"65c5ebb359685409e9ba44e1\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-24T15:34:58.643Z\",\n    \"updatedAt\": \"2024-02-16T19:37:13.607Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -2856,7 +2851,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"name\": \"Allen Muller\",\n  \"code\": \"transmit\",\n  \"weight\": 671\n}"
+                  "raw": "{\n  \"name\": \"Holly Armstrong\",\n  \"code\": \"Administrator\",\n  \"weight\": 103\n}"
                 },
                 "description": "",
                 "auth": {
@@ -2879,7 +2874,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"name\": \"Allen Muller\",\n    \"code\": \"transmit\",\n    \"weight\": 671,\n    \"id\": \"65c5df6c68ac630955c3d453\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-17T08:25:01.480Z\",\n    \"updatedAt\": \"2024-07-17T16:41:31.298Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"name\": \"Holly Armstrong\",\n    \"code\": \"Administrator\",\n    \"weight\": 103,\n    \"id\": \"65c5ebb359685409e9ba44db\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-24T15:34:58.643Z\",\n    \"updatedAt\": \"2024-02-16T19:37:13.607Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -2905,7 +2900,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"name\": \"Allen Muller\",\n      \"code\": \"transmit\",\n      \"weight\": 671\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"name\": \"Holly Armstrong\",\n      \"code\": \"Administrator\",\n      \"weight\": 103\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -2977,7 +2972,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"name\": \"Allen Muller\",\n        \"code\": \"transmit\",\n        \"weight\": 671,\n        \"id\": \"65c5df6c68ac630955c3d455\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-04-17T08:25:01.480Z\",\n        \"updatedAt\": \"2024-07-17T16:41:31.298Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"name\": \"Holly Armstrong\",\n        \"code\": \"Administrator\",\n        \"weight\": 103,\n        \"id\": \"65c5ebb359685409e9ba44dd\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-02-24T15:34:58.643Z\",\n        \"updatedAt\": \"2024-02-16T19:37:13.607Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -3271,7 +3266,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"name\": \"Allen Muller\",\n    \"code\": \"transmit\",\n    \"weight\": 671,\n    \"id\": \"65c5df6c68ac630955c3d457\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-17T08:25:01.480Z\",\n    \"updatedAt\": \"2024-07-17T16:41:31.298Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"name\": \"Holly Armstrong\",\n    \"code\": \"Administrator\",\n    \"weight\": 103,\n    \"id\": \"65c5ebb359685409e9ba44df\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-24T15:34:58.643Z\",\n    \"updatedAt\": \"2024-02-16T19:37:13.607Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -3297,7 +3292,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"name\": \"Allen Muller\",\n  \"code\": \"transmit\",\n  \"weight\": 671\n}"
+                  "raw": "{\n  \"name\": \"Holly Armstrong\",\n  \"code\": \"Administrator\",\n  \"weight\": 103\n}"
                 },
                 "description": "",
                 "auth": {
@@ -3320,7 +3315,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"name\": \"Allen Muller\",\n    \"code\": \"transmit\",\n    \"weight\": 671,\n    \"id\": \"65c5df6c68ac630955c3d458\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-17T08:25:01.480Z\",\n    \"updatedAt\": \"2024-07-17T16:41:31.298Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"name\": \"Holly Armstrong\",\n    \"code\": \"Administrator\",\n    \"weight\": 103,\n    \"id\": \"65c5ebb359685409e9ba44e0\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-24T15:34:58.643Z\",\n    \"updatedAt\": \"2024-02-16T19:37:13.607Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -3424,7 +3419,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"route_name\": \"drive\",\n    \"method\": \"circuit\",\n    \"uri\": \"Supervisor\",\n    \"id\": \"65c5df6c68ac630955c3d461\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-03-29T22:01:28.783Z\",\n    \"updatedAt\": \"2025-01-09T17:37:38.360Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"route_name\": \"orchid\",\n    \"method\": \"calculating\",\n    \"uri\": \"Turkey\",\n    \"id\": \"65c5ebb359685409e9ba44e9\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-19T12:01:13.231Z\",\n    \"updatedAt\": \"2024-11-21T00:47:35.014Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -3450,7 +3445,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"route_name\": \"drive\",\n  \"method\": \"circuit\",\n  \"uri\": \"Supervisor\"\n}"
+                  "raw": "{\n  \"route_name\": \"orchid\",\n  \"method\": \"calculating\",\n  \"uri\": \"Turkey\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -3473,7 +3468,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"route_name\": \"drive\",\n    \"method\": \"circuit\",\n    \"uri\": \"Supervisor\",\n    \"id\": \"65c5df6c68ac630955c3d45b\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-03-29T22:01:28.783Z\",\n    \"updatedAt\": \"2025-01-09T17:37:38.360Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"route_name\": \"orchid\",\n    \"method\": \"calculating\",\n    \"uri\": \"Turkey\",\n    \"id\": \"65c5ebb359685409e9ba44e3\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-19T12:01:13.231Z\",\n    \"updatedAt\": \"2024-11-21T00:47:35.014Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -3499,7 +3494,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"route_name\": \"drive\",\n      \"method\": \"circuit\",\n      \"uri\": \"Supervisor\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"route_name\": \"orchid\",\n      \"method\": \"calculating\",\n      \"uri\": \"Turkey\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -3571,7 +3566,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"route_name\": \"drive\",\n        \"method\": \"circuit\",\n        \"uri\": \"Supervisor\",\n        \"id\": \"65c5df6c68ac630955c3d45d\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-03-29T22:01:28.783Z\",\n        \"updatedAt\": \"2025-01-09T17:37:38.360Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"route_name\": \"orchid\",\n        \"method\": \"calculating\",\n        \"uri\": \"Turkey\",\n        \"id\": \"65c5ebb359685409e9ba44e5\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-04-19T12:01:13.231Z\",\n        \"updatedAt\": \"2024-11-21T00:47:35.014Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -3865,7 +3860,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"route_name\": \"drive\",\n    \"method\": \"circuit\",\n    \"uri\": \"Supervisor\",\n    \"id\": \"65c5df6c68ac630955c3d45f\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-03-29T22:01:28.783Z\",\n    \"updatedAt\": \"2025-01-09T17:37:38.360Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"route_name\": \"orchid\",\n    \"method\": \"calculating\",\n    \"uri\": \"Turkey\",\n    \"id\": \"65c5ebb359685409e9ba44e7\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-19T12:01:13.231Z\",\n    \"updatedAt\": \"2024-11-21T00:47:35.014Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -3891,7 +3886,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"route_name\": \"drive\",\n  \"method\": \"circuit\",\n  \"uri\": \"Supervisor\"\n}"
+                  "raw": "{\n  \"route_name\": \"orchid\",\n  \"method\": \"calculating\",\n  \"uri\": \"Turkey\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -3914,7 +3909,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"route_name\": \"drive\",\n    \"method\": \"circuit\",\n    \"uri\": \"Supervisor\",\n    \"id\": \"65c5df6c68ac630955c3d460\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-03-29T22:01:28.783Z\",\n    \"updatedAt\": \"2025-01-09T17:37:38.360Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"route_name\": \"orchid\",\n    \"method\": \"calculating\",\n    \"uri\": \"Turkey\",\n    \"id\": \"65c5ebb359685409e9ba44e8\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-19T12:01:13.231Z\",\n    \"updatedAt\": \"2024-11-21T00:47:35.014Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -4018,7 +4013,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"routeId\": \"65c5df6c68ac630955c3d462\",\n    \"roleId\": \"65c5df6c68ac630955c3d463\",\n    \"id\": \"65c5df6c68ac630955c3d46b\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-26T03:13:51.648Z\",\n    \"updatedAt\": \"2024-04-01T19:25:06.785Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"routeId\": \"65c5ebb359685409e9ba44ea\",\n    \"roleId\": \"65c5ebb359685409e9ba44eb\",\n    \"id\": \"65c5ebb359685409e9ba44f3\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-09-30T04:38:25.858Z\",\n    \"updatedAt\": \"2024-08-15T18:29:31.560Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -4044,7 +4039,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"routeId\": \"65c5df6c68ac630955c3d462\",\n  \"roleId\": \"65c5df6c68ac630955c3d463\"\n}"
+                  "raw": "{\n  \"routeId\": \"65c5ebb359685409e9ba44ea\",\n  \"roleId\": \"65c5ebb359685409e9ba44eb\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -4067,7 +4062,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"routeId\": \"65c5df6c68ac630955c3d462\",\n    \"roleId\": \"65c5df6c68ac630955c3d463\",\n    \"id\": \"65c5df6c68ac630955c3d465\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-26T03:13:51.648Z\",\n    \"updatedAt\": \"2024-04-01T19:25:06.785Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"routeId\": \"65c5ebb359685409e9ba44ea\",\n    \"roleId\": \"65c5ebb359685409e9ba44eb\",\n    \"id\": \"65c5ebb359685409e9ba44ed\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-09-30T04:38:25.858Z\",\n    \"updatedAt\": \"2024-08-15T18:29:31.560Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -4093,7 +4088,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"routeId\": \"65c5df6c68ac630955c3d462\",\n      \"roleId\": \"65c5df6c68ac630955c3d463\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"routeId\": \"65c5ebb359685409e9ba44ea\",\n      \"roleId\": \"65c5ebb359685409e9ba44eb\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -4165,7 +4160,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"routeId\": \"65c5df6c68ac630955c3d462\",\n        \"roleId\": \"65c5df6c68ac630955c3d463\",\n        \"id\": \"65c5df6c68ac630955c3d467\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-02-26T03:13:51.648Z\",\n        \"updatedAt\": \"2024-04-01T19:25:06.785Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"routeId\": \"65c5ebb359685409e9ba44ea\",\n        \"roleId\": \"65c5ebb359685409e9ba44eb\",\n        \"id\": \"65c5ebb359685409e9ba44ef\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-09-30T04:38:25.858Z\",\n        \"updatedAt\": \"2024-08-15T18:29:31.560Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -4459,7 +4454,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"routeId\": \"65c5df6c68ac630955c3d462\",\n    \"roleId\": \"65c5df6c68ac630955c3d463\",\n    \"id\": \"65c5df6c68ac630955c3d469\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-26T03:13:51.648Z\",\n    \"updatedAt\": \"2024-04-01T19:25:06.785Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"routeId\": \"65c5ebb359685409e9ba44ea\",\n    \"roleId\": \"65c5ebb359685409e9ba44eb\",\n    \"id\": \"65c5ebb359685409e9ba44f1\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-09-30T04:38:25.858Z\",\n    \"updatedAt\": \"2024-08-15T18:29:31.560Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -4485,7 +4480,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"routeId\": \"65c5df6c68ac630955c3d462\",\n  \"roleId\": \"65c5df6c68ac630955c3d463\"\n}"
+                  "raw": "{\n  \"routeId\": \"65c5ebb359685409e9ba44ea\",\n  \"roleId\": \"65c5ebb359685409e9ba44eb\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -4508,7 +4503,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"routeId\": \"65c5df6c68ac630955c3d462\",\n    \"roleId\": \"65c5df6c68ac630955c3d463\",\n    \"id\": \"65c5df6c68ac630955c3d46a\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-26T03:13:51.648Z\",\n    \"updatedAt\": \"2024-04-01T19:25:06.785Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"routeId\": \"65c5ebb359685409e9ba44ea\",\n    \"roleId\": \"65c5ebb359685409e9ba44eb\",\n    \"id\": \"65c5ebb359685409e9ba44f2\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-09-30T04:38:25.858Z\",\n    \"updatedAt\": \"2024-08-15T18:29:31.560Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -4612,7 +4607,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"userId\": \"65c5df6c68ac630955c3d46c\",\n    \"roleId\": \"65c5df6c68ac630955c3d46d\",\n    \"id\": \"65c5df6c68ac630955c3d475\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2025-01-10T19:28:40.997Z\",\n    \"updatedAt\": \"2024-06-05T03:41:50.288Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"userId\": \"65c5ebb359685409e9ba44f4\",\n    \"roleId\": \"65c5ebb359685409e9ba44f5\",\n    \"id\": \"65c5ebb359685409e9ba44fd\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T13:02:05.316Z\",\n    \"updatedAt\": \"2024-11-01T16:42:10.673Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -4638,7 +4633,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"userId\": \"65c5df6c68ac630955c3d46c\",\n  \"roleId\": \"65c5df6c68ac630955c3d46d\"\n}"
+                  "raw": "{\n  \"userId\": \"65c5ebb359685409e9ba44f4\",\n  \"roleId\": \"65c5ebb359685409e9ba44f5\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -4661,7 +4656,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"userId\": \"65c5df6c68ac630955c3d46c\",\n    \"roleId\": \"65c5df6c68ac630955c3d46d\",\n    \"id\": \"65c5df6c68ac630955c3d46f\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2025-01-10T19:28:40.997Z\",\n    \"updatedAt\": \"2024-06-05T03:41:50.288Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"userId\": \"65c5ebb359685409e9ba44f4\",\n    \"roleId\": \"65c5ebb359685409e9ba44f5\",\n    \"id\": \"65c5ebb359685409e9ba44f7\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T13:02:05.316Z\",\n    \"updatedAt\": \"2024-11-01T16:42:10.673Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -4687,7 +4682,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"userId\": \"65c5df6c68ac630955c3d46c\",\n      \"roleId\": \"65c5df6c68ac630955c3d46d\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"userId\": \"65c5ebb359685409e9ba44f4\",\n      \"roleId\": \"65c5ebb359685409e9ba44f5\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -4759,7 +4754,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"userId\": \"65c5df6c68ac630955c3d46c\",\n        \"roleId\": \"65c5df6c68ac630955c3d46d\",\n        \"id\": \"65c5df6c68ac630955c3d471\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2025-01-10T19:28:40.997Z\",\n        \"updatedAt\": \"2024-06-05T03:41:50.288Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"userId\": \"65c5ebb359685409e9ba44f4\",\n        \"roleId\": \"65c5ebb359685409e9ba44f5\",\n        \"id\": \"65c5ebb359685409e9ba44f9\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-07-23T13:02:05.316Z\",\n        \"updatedAt\": \"2024-11-01T16:42:10.673Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5053,7 +5048,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"userId\": \"65c5df6c68ac630955c3d46c\",\n    \"roleId\": \"65c5df6c68ac630955c3d46d\",\n    \"id\": \"65c5df6c68ac630955c3d473\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2025-01-10T19:28:40.997Z\",\n    \"updatedAt\": \"2024-06-05T03:41:50.288Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"userId\": \"65c5ebb359685409e9ba44f4\",\n    \"roleId\": \"65c5ebb359685409e9ba44f5\",\n    \"id\": \"65c5ebb359685409e9ba44fb\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T13:02:05.316Z\",\n    \"updatedAt\": \"2024-11-01T16:42:10.673Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5079,7 +5074,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"userId\": \"65c5df6c68ac630955c3d46c\",\n  \"roleId\": \"65c5df6c68ac630955c3d46d\"\n}"
+                  "raw": "{\n  \"userId\": \"65c5ebb359685409e9ba44f4\",\n  \"roleId\": \"65c5ebb359685409e9ba44f5\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -5102,7 +5097,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"userId\": \"65c5df6c68ac630955c3d46c\",\n    \"roleId\": \"65c5df6c68ac630955c3d46d\",\n    \"id\": \"65c5df6c68ac630955c3d474\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2025-01-10T19:28:40.997Z\",\n    \"updatedAt\": \"2024-06-05T03:41:50.288Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"userId\": \"65c5ebb359685409e9ba44f4\",\n    \"roleId\": \"65c5ebb359685409e9ba44f5\",\n    \"id\": \"65c5ebb359685409e9ba44fc\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T13:02:05.316Z\",\n    \"updatedAt\": \"2024-11-01T16:42:10.673Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5212,7 +5207,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d400\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2025-01-23T05:52:20.708Z\",\n    \"updatedAt\": \"2024-09-10T08:03:49.938Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba448a\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-06-01T14:44:18.121Z\",\n    \"updatedAt\": \"2024-12-06T04:30:34.063Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5238,7 +5233,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"user\": \"65c5df6c68ac630955c3d3f5\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"Dollar\",\n      \"kilometer\": 232\n    }\n  ],\n  \"date\": \"Forward\"\n}"
+                  "raw": "{\n  \"user\": \"65c5ebb359685409e9ba447f\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"violet\",\n      \"kilometer\": 576\n    }\n  ],\n  \"date\": \"Shores\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -5261,7 +5256,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d3fe\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2025-01-23T05:52:20.708Z\",\n    \"updatedAt\": \"2024-09-10T08:03:49.938Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba4488\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-06-01T14:44:18.121Z\",\n    \"updatedAt\": \"2024-12-06T04:30:34.063Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5310,7 +5305,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"user\": \"65c5df6c68ac630955c3d3f5\",\n        \"trip\": [\n          {\n            \"_id\": false,\n            \"endLocation\": \"Dollar\",\n            \"kilometer\": 232\n          }\n        ],\n        \"date\": \"Forward\",\n        \"id\": \"65c5df6c68ac630955c3d3ff\",\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-01-23T05:52:20.708Z\",\n        \"updatedAt\": \"2024-09-10T08:03:49.938Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"user\": \"65c5ebb359685409e9ba447f\",\n        \"trip\": [\n          {\n            \"_id\": false,\n            \"endLocation\": \"violet\",\n            \"kilometer\": 576\n          }\n        ],\n        \"date\": \"Shores\",\n        \"id\": \"65c5ebb359685409e9ba4489\",\n        \"isDeleted\": false,\n        \"createdAt\": \"2024-06-01T14:44:18.121Z\",\n        \"updatedAt\": \"2024-12-06T04:30:34.063Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5385,7 +5380,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"user\": \"65c5df6c68ac630955c3d3f5\",\n      \"trip\": [\n        {\n          \"_id\": false,\n          \"endLocation\": \"Dollar\",\n          \"kilometer\": 232\n        }\n      ],\n      \"date\": \"Forward\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"user\": \"65c5ebb359685409e9ba447f\",\n      \"trip\": [\n        {\n          \"_id\": false,\n          \"endLocation\": \"violet\",\n          \"kilometer\": 576\n        }\n      ],\n      \"date\": \"Shores\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -5483,7 +5478,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"user\": \"65c5df6c68ac630955c3d3f5\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"Dollar\",\n      \"kilometer\": 232\n    }\n  ],\n  \"date\": \"Forward\"\n}"
+                  "raw": "{\n  \"user\": \"65c5ebb359685409e9ba447f\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"violet\",\n      \"kilometer\": 576\n    }\n  ],\n  \"date\": \"Shores\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -5506,7 +5501,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d401\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2025-01-23T05:52:20.708Z\",\n    \"updatedAt\": \"2024-09-10T08:03:49.938Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba448b\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-06-01T14:44:18.121Z\",\n    \"updatedAt\": \"2024-12-06T04:30:34.063Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5555,7 +5550,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d402\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2025-01-23T05:52:20.708Z\",\n    \"updatedAt\": \"2024-09-10T08:03:49.938Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba448c\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-06-01T14:44:18.121Z\",\n    \"updatedAt\": \"2024-12-06T04:30:34.063Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5876,7 +5871,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d41c\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-31T21:09:04.361Z\",\n    \"updatedAt\": \"2024-09-21T06:46:56.251Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44a6\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-08T09:40:41.406Z\",\n    \"updatedAt\": \"2024-12-24T17:13:55.195Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5902,7 +5897,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\",\n  \"userType\": 1\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\",\n  \"userType\": 1\n}"
                 },
                 "description": "",
                 "auth": {
@@ -5925,7 +5920,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d417\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-31T21:09:04.361Z\",\n    \"updatedAt\": \"2024-09-21T06:46:56.251Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44a1\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-08T09:40:41.406Z\",\n    \"updatedAt\": \"2024-12-24T17:13:55.195Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -5951,7 +5946,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\",\n  \"userType\": 1\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\",\n  \"userType\": 1\n}"
                 },
                 "description": "",
                 "auth": {
@@ -5974,7 +5969,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d418\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-31T21:09:04.361Z\",\n    \"updatedAt\": \"2024-09-21T06:46:56.251Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44a2\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-08T09:40:41.406Z\",\n    \"updatedAt\": \"2024-12-24T17:13:55.195Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -6023,7 +6018,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d419\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-31T21:09:04.361Z\",\n    \"updatedAt\": \"2024-09-21T06:46:56.251Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44a3\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-08T09:40:41.406Z\",\n    \"updatedAt\": \"2024-12-24T17:13:55.195Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -6098,7 +6093,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\",\n  \"userType\": 1\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\",\n  \"userType\": 1\n}"
                 },
                 "description": "",
                 "auth": {
@@ -6121,7 +6116,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d41b\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-31T21:09:04.361Z\",\n    \"updatedAt\": \"2024-09-21T06:46:56.251Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44a5\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-08T09:40:41.406Z\",\n    \"updatedAt\": \"2024-12-24T17:13:55.195Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -6171,7 +6166,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"id\": \"65c5df6c68ac630955c3d41d\",\n    \"loginRetryLimit\": 0,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWRlZDVjMGFjMjAxMmFjMDI4ODkxZiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjkzNTEyNzAsImV4cCI6MTYyOTk1MTI3MH0.BJ-WKjNYeFDQ4pn8kfli5gwn6GLz_c3voFht20Agj9k\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-18T20:18:00.096Z\",\n    \"updatedAt\": \"2024-02-16T17:50:55.107Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"id\": \"65c5ebb359685409e9ba44a7\",\n    \"loginRetryLimit\": 0,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWRlZDVjMGFjMjAxMmFjMDI4ODkxZiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjkzNTEyNzAsImV4cCI6MTYyOTk1MTI3MH0.BJ-WKjNYeFDQ4pn8kfli5gwn6GLz_c3voFht20Agj9k\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-24T07:39:37.277Z\",\n    \"updatedAt\": \"2024-11-04T08:31:08.350Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -6197,7 +6192,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\"\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\"\n}"
                 },
                 "description": "",
                 "auth": {}
@@ -6215,7 +6210,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"id\": \"65c5df6c68ac630955c3d41d\",\n    \"loginRetryLimit\": 0,\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-18T20:18:00.096Z\",\n    \"updatedAt\": \"2024-02-16T17:50:55.107Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"id\": \"65c5ebb359685409e9ba44a7\",\n    \"loginRetryLimit\": 0,\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-24T07:39:37.277Z\",\n    \"updatedAt\": \"2024-11-04T08:31:08.350Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -6417,11 +6412,6 @@
           ]
         },
         {
-          "name": "category",
-          "description": "category Model APIs",
-          "item": []
-        },
-        {
           "name": "banner",
           "description": "banner Model APIs",
           "item": [
@@ -6462,7 +6452,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d436\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-01T09:30:38.857Z\",\n    \"updatedAt\": \"2025-02-07T14:55:21.131Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44be\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-25T19:45:56.047Z\",\n    \"updatedAt\": \"2024-07-16T21:50:23.409Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -6488,7 +6478,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"bannerTitle\": \"parsing\",\n  \"alternateTitle\": \"Refined\",\n  \"startDate\": \"2024-06-27T12:17:39.389Z\",\n  \"endDate\": \"2024-05-12T05:48:36.227Z\",\n  \"redirectLink\": \"Operative\",\n  \"sellerId\": \"65c5df6c68ac630955c3d42a\"\n}"
+                  "raw": "{\n  \"bannerTitle\": \"Future\",\n  \"alternateTitle\": \"Incredible\",\n  \"startDate\": \"2024-10-03T01:56:25.091Z\",\n  \"endDate\": \"2025-02-01T05:42:39.497Z\",\n  \"redirectLink\": \"bandwidth-monitored\",\n  \"sellerId\": \"65c5ebb359685409e9ba44b2\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -6511,7 +6501,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d433\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-01T09:30:38.857Z\",\n    \"updatedAt\": \"2025-02-07T14:55:21.131Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44bb\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-25T19:45:56.047Z\",\n    \"updatedAt\": \"2024-07-16T21:50:23.409Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -6537,7 +6527,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"bannerTitle\": \"parsing\",\n      \"alternateTitle\": \"Refined\",\n      \"startDate\": \"2024-06-27T12:17:39.389Z\",\n      \"endDate\": \"2024-05-12T05:48:36.227Z\",\n      \"redirectLink\": \"Operative\",\n      \"sellerId\": \"65c5df6c68ac630955c3d42a\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"bannerTitle\": \"Future\",\n      \"alternateTitle\": \"Incredible\",\n      \"startDate\": \"2024-10-03T01:56:25.091Z\",\n      \"endDate\": \"2025-02-01T05:42:39.497Z\",\n      \"redirectLink\": \"bandwidth-monitored\",\n      \"sellerId\": \"65c5ebb359685409e9ba44b2\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -6609,7 +6599,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"bannerTitle\": \"parsing\",\n        \"alternateTitle\": \"Refined\",\n        \"startDate\": \"2024-06-27T12:17:39.389Z\",\n        \"endDate\": \"2024-05-12T05:48:36.227Z\",\n        \"redirectLink\": \"Operative\",\n        \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n        \"id\": \"65c5df6c68ac630955c3d435\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-04-01T09:30:38.857Z\",\n        \"updatedAt\": \"2025-02-07T14:55:21.131Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"bannerTitle\": \"Future\",\n        \"alternateTitle\": \"Incredible\",\n        \"startDate\": \"2024-10-03T01:56:25.091Z\",\n        \"endDate\": \"2025-02-01T05:42:39.497Z\",\n        \"redirectLink\": \"bandwidth-monitored\",\n        \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n        \"id\": \"65c5ebb359685409e9ba44bd\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-12-25T19:45:56.047Z\",\n        \"updatedAt\": \"2024-07-16T21:50:23.409Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -6733,7 +6723,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"bannerTitle\": \"parsing\",\n  \"alternateTitle\": \"Refined\",\n  \"startDate\": \"2024-06-27T12:17:39.389Z\",\n  \"endDate\": \"2024-05-12T05:48:36.227Z\",\n  \"redirectLink\": \"Operative\",\n  \"sellerId\": \"65c5df6c68ac630955c3d42a\"\n}"
+                  "raw": "{\n  \"bannerTitle\": \"Future\",\n  \"alternateTitle\": \"Incredible\",\n  \"startDate\": \"2024-10-03T01:56:25.091Z\",\n  \"endDate\": \"2025-02-01T05:42:39.497Z\",\n  \"redirectLink\": \"bandwidth-monitored\",\n  \"sellerId\": \"65c5ebb359685409e9ba44b2\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -6756,7 +6746,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d437\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-01T09:30:38.857Z\",\n    \"updatedAt\": \"2025-02-07T14:55:21.131Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44bf\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-25T19:45:56.047Z\",\n    \"updatedAt\": \"2024-07-16T21:50:23.409Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -6805,7 +6795,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d438\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-01T09:30:38.857Z\",\n    \"updatedAt\": \"2025-02-07T14:55:21.131Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44c0\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-12-25T19:45:56.047Z\",\n    \"updatedAt\": \"2024-07-16T21:50:23.409Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -7067,7 +7057,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d407\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2025-01-10T22:52:35.969Z\",\n    \"updatedAt\": \"2024-04-14T03:58:52.840Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba4491\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-03-02T04:41:51.230Z\",\n    \"updatedAt\": \"2025-01-22T11:57:32.182Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -7093,7 +7083,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"user\": \"65c5df6c68ac630955c3d3f5\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"Dollar\",\n      \"kilometer\": 232\n    }\n  ],\n  \"date\": \"Forward\"\n}"
+                  "raw": "{\n  \"user\": \"65c5ebb359685409e9ba447f\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"violet\",\n      \"kilometer\": 576\n    }\n  ],\n  \"date\": \"Shores\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -7116,7 +7106,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d405\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2025-01-10T22:52:35.969Z\",\n    \"updatedAt\": \"2024-04-14T03:58:52.840Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba448f\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-03-02T04:41:51.230Z\",\n    \"updatedAt\": \"2025-01-22T11:57:32.182Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -7165,7 +7155,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"user\": \"65c5df6c68ac630955c3d3f5\",\n        \"trip\": [\n          {\n            \"_id\": false,\n            \"endLocation\": \"Dollar\",\n            \"kilometer\": 232\n          }\n        ],\n        \"date\": \"Forward\",\n        \"id\": \"65c5df6c68ac630955c3d406\",\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-01-10T22:52:35.969Z\",\n        \"updatedAt\": \"2024-04-14T03:58:52.840Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"user\": \"65c5ebb359685409e9ba447f\",\n        \"trip\": [\n          {\n            \"_id\": false,\n            \"endLocation\": \"violet\",\n            \"kilometer\": 576\n          }\n        ],\n        \"date\": \"Shores\",\n        \"id\": \"65c5ebb359685409e9ba4490\",\n        \"isDeleted\": false,\n        \"createdAt\": \"2024-03-02T04:41:51.230Z\",\n        \"updatedAt\": \"2025-01-22T11:57:32.182Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -7240,7 +7230,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"user\": \"65c5df6c68ac630955c3d3f5\",\n      \"trip\": [\n        {\n          \"_id\": false,\n          \"endLocation\": \"Dollar\",\n          \"kilometer\": 232\n        }\n      ],\n      \"date\": \"Forward\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"user\": \"65c5ebb359685409e9ba447f\",\n      \"trip\": [\n        {\n          \"_id\": false,\n          \"endLocation\": \"violet\",\n          \"kilometer\": 576\n        }\n      ],\n      \"date\": \"Shores\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -7338,7 +7328,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"user\": \"65c5df6c68ac630955c3d3f5\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"Dollar\",\n      \"kilometer\": 232\n    }\n  ],\n  \"date\": \"Forward\"\n}"
+                  "raw": "{\n  \"user\": \"65c5ebb359685409e9ba447f\",\n  \"trip\": [\n    {\n      \"_id\": false,\n      \"endLocation\": \"violet\",\n      \"kilometer\": 576\n    }\n  ],\n  \"date\": \"Shores\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -7361,7 +7351,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d408\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2025-01-10T22:52:35.969Z\",\n    \"updatedAt\": \"2024-04-14T03:58:52.840Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba4492\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-03-02T04:41:51.230Z\",\n    \"updatedAt\": \"2025-01-22T11:57:32.182Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -7410,7 +7400,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5df6c68ac630955c3d3f5\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"Dollar\",\n        \"kilometer\": 232\n      }\n    ],\n    \"date\": \"Forward\",\n    \"id\": \"65c5df6c68ac630955c3d409\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2025-01-10T22:52:35.969Z\",\n    \"updatedAt\": \"2024-04-14T03:58:52.840Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"user\": \"65c5ebb359685409e9ba447f\",\n    \"trip\": [\n      {\n        \"_id\": false,\n        \"endLocation\": \"violet\",\n        \"kilometer\": 576\n      }\n    ],\n    \"date\": \"Shores\",\n    \"id\": \"65c5ebb359685409e9ba4493\",\n    \"isDeleted\": false,\n    \"createdAt\": \"2024-03-02T04:41:51.230Z\",\n    \"updatedAt\": \"2025-01-22T11:57:32.182Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -7731,7 +7721,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d421\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-26T23:52:56.834Z\",\n    \"updatedAt\": \"2024-11-26T02:44:44.743Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44ab\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T20:40:05.723Z\",\n    \"updatedAt\": \"2024-12-15T16:57:50.345Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -7780,7 +7770,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d426\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-26T23:52:56.834Z\",\n    \"updatedAt\": \"2024-11-26T02:44:44.743Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44b0\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T20:40:05.723Z\",\n    \"updatedAt\": \"2024-12-15T16:57:50.345Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -7806,7 +7796,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\",\n  \"userType\": 1\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\",\n  \"userType\": 1\n}"
                 },
                 "description": "",
                 "auth": {
@@ -7829,7 +7819,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d41e\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-26T23:52:56.834Z\",\n    \"updatedAt\": \"2024-11-26T02:44:44.743Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44a8\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T20:40:05.723Z\",\n    \"updatedAt\": \"2024-12-15T16:57:50.345Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -7855,7 +7845,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"username\": \"Alfonso43\",\n      \"password\": \"1GLz_3R_ZtdGEkh\",\n      \"email\": \"Misael.Schiller@yahoo.com\",\n      \"name\": \"Glen McKenzie\",\n      \"shippingAddress\": [\n        {\n          \"_id\": false,\n          \"pincode\": \"Markets\",\n          \"address1\": \"Chips\",\n          \"address2\": \"PNG\",\n          \"landmark\": \"motivating\",\n          \"city\": \"maroon\",\n          \"isDefault\": true,\n          \"state\": \"Operations\",\n          \"addressType\": \"monitor\",\n          \"fullName\": \"intranet\",\n          \"mobile\": 679,\n          \"addressNo\": 532\n        }\n      ],\n      \"wishlist\": [\n        {\n          \"_id\": false,\n          \"productId\": \"salmon\"\n        }\n      ],\n      \"mobileNo\": \"(676) 040-0718\",\n      \"userType\": 1\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"username\": \"Ola.Smith87\",\n      \"password\": \"1vxnf_23KwoKxDW\",\n      \"email\": \"Amira37@gmail.com\",\n      \"name\": \"Jessie Thiel IV\",\n      \"mobileNo\": \"(347) 589-4877\",\n      \"userType\": 1\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -7927,7 +7917,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"username\": \"Alfonso43\",\n        \"email\": \"Misael.Schiller@yahoo.com\",\n        \"name\": \"Glen McKenzie\",\n        \"shippingAddress\": [\n          {\n            \"_id\": false,\n            \"pincode\": \"Markets\",\n            \"address1\": \"Chips\",\n            \"address2\": \"PNG\",\n            \"landmark\": \"motivating\",\n            \"city\": \"maroon\",\n            \"isDefault\": true,\n            \"state\": \"Operations\",\n            \"addressType\": \"monitor\",\n            \"fullName\": \"intranet\",\n            \"mobile\": 679,\n            \"addressNo\": 532\n          }\n        ],\n        \"wishlist\": [\n          {\n            \"_id\": false,\n            \"productId\": \"salmon\"\n          }\n        ],\n        \"mobileNo\": \"(676) 040-0718\",\n        \"userType\": 1,\n        \"id\": \"65c5df6c68ac630955c3d420\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-04-26T23:52:56.834Z\",\n        \"updatedAt\": \"2024-11-26T02:44:44.743Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"username\": \"Ola.Smith87\",\n        \"email\": \"Amira37@gmail.com\",\n        \"name\": \"Jessie Thiel IV\",\n        \"mobileNo\": \"(347) 589-4877\",\n        \"userType\": 1,\n        \"id\": \"65c5ebb359685409e9ba44aa\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-07-23T20:40:05.723Z\",\n        \"updatedAt\": \"2024-12-15T16:57:50.345Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8002,7 +7992,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\",\n  \"userType\": 1\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\",\n  \"userType\": 1\n}"
                 },
                 "description": "",
                 "auth": {
@@ -8025,7 +8015,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d422\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-26T23:52:56.834Z\",\n    \"updatedAt\": \"2024-11-26T02:44:44.743Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44ac\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T20:40:05.723Z\",\n    \"updatedAt\": \"2024-12-15T16:57:50.345Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8074,7 +8064,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d423\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-26T23:52:56.834Z\",\n    \"updatedAt\": \"2024-11-26T02:44:44.743Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44ad\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T20:40:05.723Z\",\n    \"updatedAt\": \"2024-12-15T16:57:50.345Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8149,7 +8139,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\",\n  \"userType\": 1\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\",\n  \"userType\": 1\n}"
                 },
                 "description": "",
                 "auth": {
@@ -8172,7 +8162,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"userType\": 1,\n    \"id\": \"65c5df6c68ac630955c3d425\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-04-26T23:52:56.834Z\",\n    \"updatedAt\": \"2024-11-26T02:44:44.743Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"userType\": 1,\n    \"id\": \"65c5ebb359685409e9ba44af\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-23T20:40:05.723Z\",\n    \"updatedAt\": \"2024-12-15T16:57:50.345Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8222,7 +8212,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"id\": \"65c5df6c68ac630955c3d427\",\n    \"loginRetryLimit\": 0,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWRlZDVjMGFjMjAxMmFjMDI4ODkxZiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjkzNTEyNzAsImV4cCI6MTYyOTk1MTI3MH0.BJ-WKjNYeFDQ4pn8kfli5gwn6GLz_c3voFht20Agj9k\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-11-04T14:26:17.427Z\",\n    \"updatedAt\": \"2024-09-18T02:46:53.404Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"id\": \"65c5ebb359685409e9ba44b1\",\n    \"loginRetryLimit\": 0,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWRlZDVjMGFjMjAxMmFjMDI4ODkxZiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MjkzNTEyNzAsImV4cCI6MTYyOTk1MTI3MH0.BJ-WKjNYeFDQ4pn8kfli5gwn6GLz_c3voFht20Agj9k\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-09T19:57:55.929Z\",\n    \"updatedAt\": \"2024-04-19T07:56:44.722Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8248,7 +8238,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"username\": \"Alfonso43\",\n  \"password\": \"1GLz_3R_ZtdGEkh\",\n  \"email\": \"Misael.Schiller@yahoo.com\",\n  \"name\": \"Glen McKenzie\",\n  \"shippingAddress\": [\n    {\n      \"_id\": false,\n      \"pincode\": \"Markets\",\n      \"address1\": \"Chips\",\n      \"address2\": \"PNG\",\n      \"landmark\": \"motivating\",\n      \"city\": \"maroon\",\n      \"isDefault\": true,\n      \"state\": \"Operations\",\n      \"addressType\": \"monitor\",\n      \"fullName\": \"intranet\",\n      \"mobile\": 679,\n      \"addressNo\": 532\n    }\n  ],\n  \"wishlist\": [\n    {\n      \"_id\": false,\n      \"productId\": \"salmon\"\n    }\n  ],\n  \"mobileNo\": \"(676) 040-0718\"\n}"
+                  "raw": "{\n  \"username\": \"Ola.Smith87\",\n  \"password\": \"1vxnf_23KwoKxDW\",\n  \"email\": \"Amira37@gmail.com\",\n  \"name\": \"Jessie Thiel IV\",\n  \"mobileNo\": \"(347) 589-4877\"\n}"
                 },
                 "description": "",
                 "auth": {}
@@ -8266,7 +8256,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Alfonso43\",\n    \"email\": \"Misael.Schiller@yahoo.com\",\n    \"name\": \"Glen McKenzie\",\n    \"shippingAddress\": [\n      {\n        \"_id\": false,\n        \"pincode\": \"Markets\",\n        \"address1\": \"Chips\",\n        \"address2\": \"PNG\",\n        \"landmark\": \"motivating\",\n        \"city\": \"maroon\",\n        \"isDefault\": true,\n        \"state\": \"Operations\",\n        \"addressType\": \"monitor\",\n        \"fullName\": \"intranet\",\n        \"mobile\": 679,\n        \"addressNo\": 532\n      }\n    ],\n    \"wishlist\": [\n      {\n        \"_id\": false,\n        \"productId\": \"salmon\"\n      }\n    ],\n    \"mobileNo\": \"(676) 040-0718\",\n    \"id\": \"65c5df6c68ac630955c3d427\",\n    \"loginRetryLimit\": 0,\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-11-04T14:26:17.427Z\",\n    \"updatedAt\": \"2024-09-18T02:46:53.404Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"username\": \"Ola.Smith87\",\n    \"email\": \"Amira37@gmail.com\",\n    \"name\": \"Jessie Thiel IV\",\n    \"mobileNo\": \"(347) 589-4877\",\n    \"id\": \"65c5ebb359685409e9ba44b1\",\n    \"loginRetryLimit\": 0,\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-06-09T19:57:55.929Z\",\n    \"updatedAt\": \"2024-04-19T07:56:44.722Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8468,11 +8458,6 @@
           ]
         },
         {
-          "name": "category",
-          "description": "category Model APIs",
-          "item": []
-        },
-        {
           "name": "banner",
           "description": "banner Model APIs",
           "item": [
@@ -8513,7 +8498,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d43d\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-02T23:01:53.361Z\",\n    \"updatedAt\": \"2024-05-20T04:43:57.341Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44c5\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-28T17:58:17.553Z\",\n    \"updatedAt\": \"2024-06-08T05:46:14.590Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8539,7 +8524,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"bannerTitle\": \"parsing\",\n  \"alternateTitle\": \"Refined\",\n  \"startDate\": \"2024-06-27T12:17:39.389Z\",\n  \"endDate\": \"2024-05-12T05:48:36.227Z\",\n  \"redirectLink\": \"Operative\",\n  \"sellerId\": \"65c5df6c68ac630955c3d42a\"\n}"
+                  "raw": "{\n  \"bannerTitle\": \"Future\",\n  \"alternateTitle\": \"Incredible\",\n  \"startDate\": \"2024-10-03T01:56:25.091Z\",\n  \"endDate\": \"2025-02-01T05:42:39.497Z\",\n  \"redirectLink\": \"bandwidth-monitored\",\n  \"sellerId\": \"65c5ebb359685409e9ba44b2\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -8562,7 +8547,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d43a\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-02T23:01:53.361Z\",\n    \"updatedAt\": \"2024-05-20T04:43:57.341Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44c2\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-28T17:58:17.553Z\",\n    \"updatedAt\": \"2024-06-08T05:46:14.590Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8588,7 +8573,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"bannerTitle\": \"parsing\",\n      \"alternateTitle\": \"Refined\",\n      \"startDate\": \"2024-06-27T12:17:39.389Z\",\n      \"endDate\": \"2024-05-12T05:48:36.227Z\",\n      \"redirectLink\": \"Operative\",\n      \"sellerId\": \"65c5df6c68ac630955c3d42a\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"bannerTitle\": \"Future\",\n      \"alternateTitle\": \"Incredible\",\n      \"startDate\": \"2024-10-03T01:56:25.091Z\",\n      \"endDate\": \"2025-02-01T05:42:39.497Z\",\n      \"redirectLink\": \"bandwidth-monitored\",\n      \"sellerId\": \"65c5ebb359685409e9ba44b2\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {
@@ -8660,7 +8645,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"bannerTitle\": \"parsing\",\n        \"alternateTitle\": \"Refined\",\n        \"startDate\": \"2024-06-27T12:17:39.389Z\",\n        \"endDate\": \"2024-05-12T05:48:36.227Z\",\n        \"redirectLink\": \"Operative\",\n        \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n        \"id\": \"65c5df6c68ac630955c3d43c\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-07-02T23:01:53.361Z\",\n        \"updatedAt\": \"2024-05-20T04:43:57.341Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"bannerTitle\": \"Future\",\n        \"alternateTitle\": \"Incredible\",\n        \"startDate\": \"2024-10-03T01:56:25.091Z\",\n        \"endDate\": \"2025-02-01T05:42:39.497Z\",\n        \"redirectLink\": \"bandwidth-monitored\",\n        \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n        \"id\": \"65c5ebb359685409e9ba44c4\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-02-28T17:58:17.553Z\",\n        \"updatedAt\": \"2024-06-08T05:46:14.590Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8784,7 +8769,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"bannerTitle\": \"parsing\",\n  \"alternateTitle\": \"Refined\",\n  \"startDate\": \"2024-06-27T12:17:39.389Z\",\n  \"endDate\": \"2024-05-12T05:48:36.227Z\",\n  \"redirectLink\": \"Operative\",\n  \"sellerId\": \"65c5df6c68ac630955c3d42a\"\n}"
+                  "raw": "{\n  \"bannerTitle\": \"Future\",\n  \"alternateTitle\": \"Incredible\",\n  \"startDate\": \"2024-10-03T01:56:25.091Z\",\n  \"endDate\": \"2025-02-01T05:42:39.497Z\",\n  \"redirectLink\": \"bandwidth-monitored\",\n  \"sellerId\": \"65c5ebb359685409e9ba44b2\"\n}"
                 },
                 "description": "",
                 "auth": {
@@ -8807,7 +8792,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d43e\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-02T23:01:53.361Z\",\n    \"updatedAt\": \"2024-05-20T04:43:57.341Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44c6\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-28T17:58:17.553Z\",\n    \"updatedAt\": \"2024-06-08T05:46:14.590Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -8856,7 +8841,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"parsing\",\n    \"alternateTitle\": \"Refined\",\n    \"startDate\": \"2024-06-27T12:17:39.389Z\",\n    \"endDate\": \"2024-05-12T05:48:36.227Z\",\n    \"redirectLink\": \"Operative\",\n    \"sellerId\": \"65c5df6c68ac630955c3d42a\",\n    \"id\": \"65c5df6c68ac630955c3d43f\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-07-02T23:01:53.361Z\",\n    \"updatedAt\": \"2024-05-20T04:43:57.341Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"bannerTitle\": \"Future\",\n    \"alternateTitle\": \"Incredible\",\n    \"startDate\": \"2024-10-03T01:56:25.091Z\",\n    \"endDate\": \"2025-02-01T05:42:39.497Z\",\n    \"redirectLink\": \"bandwidth-monitored\",\n    \"sellerId\": \"65c5ebb359685409e9ba44b2\",\n    \"id\": \"65c5ebb359685409e9ba44c7\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-28T17:58:17.553Z\",\n    \"updatedAt\": \"2024-06-08T05:46:14.590Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -9102,7 +9087,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Cambridgeshire\",\n    \"id\": \"65c5df6c68ac630955c3d44c\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-17T20:48:12.066Z\",\n    \"updatedAt\": \"2024-03-20T22:30:27.991Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Georgia\",\n    \"id\": \"65c5ebb359685409e9ba44d4\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-05-21T14:55:06.328Z\",\n    \"updatedAt\": \"2024-07-11T00:14:03.492Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -9128,7 +9113,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"stateName\": \"Cambridgeshire\"\n}"
+                  "raw": "{\n  \"stateName\": \"Georgia\"\n}"
                 },
                 "description": "",
                 "auth": {}
@@ -9146,7 +9131,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Cambridgeshire\",\n    \"id\": \"65c5df6c68ac630955c3d449\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-17T20:48:12.066Z\",\n    \"updatedAt\": \"2024-03-20T22:30:27.991Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Georgia\",\n    \"id\": \"65c5ebb359685409e9ba44d1\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-05-21T14:55:06.328Z\",\n    \"updatedAt\": \"2024-07-11T00:14:03.492Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -9172,7 +9157,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"data\": [\n    {\n      \"stateName\": \"Cambridgeshire\"\n    }\n  ]\n}"
+                  "raw": "{\n  \"data\": [\n    {\n      \"stateName\": \"Georgia\"\n    }\n  ]\n}"
                 },
                 "description": "",
                 "auth": {}
@@ -9234,7 +9219,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"stateName\": \"Cambridgeshire\",\n        \"id\": \"65c5df6c68ac630955c3d44b\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-02-17T20:48:12.066Z\",\n        \"updatedAt\": \"2024-03-20T22:30:27.991Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"data\": [\n      {\n        \"stateName\": \"Georgia\",\n        \"id\": \"65c5ebb359685409e9ba44d3\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"createdAt\": \"2024-05-21T14:55:06.328Z\",\n        \"updatedAt\": \"2024-07-11T00:14:03.492Z\"\n      }\n    ],\n    \"paginator\": {\n      \"itemCount\": 1,\n      \"offset\": 0,\n      \"perPage\": 10,\n      \"pageCount\": 1,\n      \"currentPage\": 1,\n      \"slNo\": 1,\n      \"hasPrevPage\": false,\n      \"hasNextPage\": false,\n      \"prev\": null,\n      \"next\": null\n    }\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -9348,7 +9333,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"stateName\": \"Cambridgeshire\"\n}"
+                  "raw": "{\n  \"stateName\": \"Georgia\"\n}"
                 },
                 "description": "",
                 "auth": {}
@@ -9366,7 +9351,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Cambridgeshire\",\n    \"id\": \"65c5df6c68ac630955c3d44d\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-17T20:48:12.066Z\",\n    \"updatedAt\": \"2024-03-20T22:30:27.991Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Georgia\",\n    \"id\": \"65c5ebb359685409e9ba44d5\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-05-21T14:55:06.328Z\",\n    \"updatedAt\": \"2024-07-11T00:14:03.492Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
@@ -9410,7 +9395,7 @@
                   "status": "OK",
                   "code": 200,
                   "_postman_previewlanguage": "json",
-                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Cambridgeshire\",\n    \"id\": \"65c5df6c68ac630955c3d44e\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-02-17T20:48:12.066Z\",\n    \"updatedAt\": \"2024-03-20T22:30:27.991Z\"\n  }\n}",
+                  "body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"stateName\": \"Georgia\",\n    \"id\": \"65c5ebb359685409e9ba44d6\",\n    \"isDeleted\": false,\n    \"isActive\": true,\n    \"createdAt\": \"2024-05-21T14:55:06.328Z\",\n    \"updatedAt\": \"2024-07-11T00:14:03.492Z\"\n  }\n}",
                   "header": [
                     {
                       "key": "Content-Type",
