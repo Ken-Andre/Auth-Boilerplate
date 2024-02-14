@@ -27,7 +27,7 @@ let LOGIN_ACCESS = {
 };
 
 const MAX_LOGIN_RETRY_LIMIT = 3;
-const LOGIN_REACTIVE_TIME = 24;   
+const LOGIN_REACTIVE_TIME = 10;   
 
 const FORGOT_PASSWORD_WITH = {
   LINK: {

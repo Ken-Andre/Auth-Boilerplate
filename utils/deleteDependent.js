@@ -3,9 +3,10 @@
  * @description :: exports deleteDependent service for project.
  */
 
+let Trip = require('../model/Trip');
+let Metadata = require('../model/metadata');
 let Tripuser = require('../model/tripuser');
 let User = require('../model/user');
-let Banner = require('../model/banner');
 let State = require('../model/state');
 let UserTokens = require('../model/userTokens');
 let Role = require('../model/role');
@@ -13,6 +14,24 @@ let ProjectRoute = require('../model/projectRoute');
 let RouteRole = require('../model/routeRole');
 let UserRole = require('../model/userRole');
 let dbService = require('.//dbService');
+
+const deleteTrip = async (filter) =>{
+  try {
+    let response  = await dbService.deleteMany(Trip,filter);
+    return response;
+  } catch (error){
+    throw new Error(error.message);
+  }
+};
+
+const deleteMetadata = async (filter) =>{
+  try {
+    let response  = await dbService.deleteMany(Metadata,filter);
+    return response;
+  } catch (error){
+    throw new Error(error.message);
+  }
+};
 
 const deleteTripuser = async (filter) =>{
   try {
@@ -29,14 +48,17 @@ const deleteUser = async (filter) =>{
     if (user && user.length){
       user = user.map((obj) => obj.id);
 
+      const TripFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
+      const TripCnt = await dbService.deleteMany(Trip,TripFilter);
+
+      const metadataFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
+      const metadataCnt = await dbService.deleteMany(Metadata,metadataFilter);
+
       const tripuserFilter = { $or: [{ user : { $in : user } },{ updatedBy : { $in : user } }] };
       const tripuserCnt = await dbService.deleteMany(Tripuser,tripuserFilter);
 
       const userFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
       const userCnt = await dbService.deleteMany(User,userFilter);
-
-      const bannerFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } },{ sellerId : { $in : user } }] };
-      const bannerCnt = await dbService.deleteMany(Banner,bannerFilter);
 
       const stateFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
       const stateCnt = await dbService.deleteMany(State,stateFilter);
@@ -58,9 +80,10 @@ const deleteUser = async (filter) =>{
 
       let deleted  = await dbService.deleteMany(User,filter);
       let response = {
+        Trip :TripCnt,
+        metadata :metadataCnt,
         tripuser :tripuserCnt,
         user :userCnt + deleted,
-        banner :bannerCnt,
         state :stateCnt,
         userTokens :userTokensCnt,
         role :roleCnt,
@@ -73,15 +96,6 @@ const deleteUser = async (filter) =>{
       return {  user : 0 };
     }
 
-  } catch (error){
-    throw new Error(error.message);
-  }
-};
-
-const deleteBanner = async (filter) =>{
-  try {
-    let response  = await dbService.deleteMany(Banner,filter);
-    return response;
   } catch (error){
     throw new Error(error.message);
   }
@@ -171,6 +185,24 @@ const deleteUserRole = async (filter) =>{
   }
 };
 
+const countTrip = async (filter) =>{
+  try {
+    const TripCnt =  await dbService.count(Trip,filter);
+    return { Trip : TripCnt };
+  } catch (error){
+    throw new Error(error.message);
+  }
+};
+
+const countMetadata = async (filter) =>{
+  try {
+    const metadataCnt =  await dbService.count(Metadata,filter);
+    return { metadata : metadataCnt };
+  } catch (error){
+    throw new Error(error.message);
+  }
+};
+
 const countTripuser = async (filter) =>{
   try {
     const tripuserCnt =  await dbService.count(Tripuser,filter);
@@ -186,14 +218,17 @@ const countUser = async (filter) =>{
     if (user && user.length){
       user = user.map((obj) => obj.id);
 
+      const TripFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
+      const TripCnt =  await dbService.count(Trip,TripFilter);
+
+      const metadataFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
+      const metadataCnt =  await dbService.count(Metadata,metadataFilter);
+
       const tripuserFilter = { $or: [{ user : { $in : user } },{ updatedBy : { $in : user } }] };
       const tripuserCnt =  await dbService.count(Tripuser,tripuserFilter);
 
       const userFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
       const userCnt =  await dbService.count(User,userFilter);
-
-      const bannerFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } },{ sellerId : { $in : user } }] };
-      const bannerCnt =  await dbService.count(Banner,bannerFilter);
 
       const stateFilter = { $or: [{ addedBy : { $in : user } },{ updatedBy : { $in : user } }] };
       const stateCnt =  await dbService.count(State,stateFilter);
@@ -214,9 +249,10 @@ const countUser = async (filter) =>{
       const userRoleCnt =  await dbService.count(UserRole,userRoleFilter);
 
       let response = {
+        Trip : TripCnt,
+        metadata : metadataCnt,
         tripuser : tripuserCnt,
         user : userCnt,
-        banner : bannerCnt,
         state : stateCnt,
         userTokens : userTokensCnt,
         role : roleCnt,
@@ -228,15 +264,6 @@ const countUser = async (filter) =>{
     } else {
       return {  user : 0 };
     }
-  } catch (error){
-    throw new Error(error.message);
-  }
-};
-
-const countBanner = async (filter) =>{
-  try {
-    const bannerCnt =  await dbService.count(Banner,filter);
-    return { banner : bannerCnt };
   } catch (error){
     throw new Error(error.message);
   }
@@ -322,6 +349,24 @@ const countUserRole = async (filter) =>{
   }
 };
 
+const softDeleteTrip = async (filter,updateBody) =>{  
+  try {
+    const TripCnt =  await dbService.updateMany(Trip,filter);
+    return { Trip : TripCnt };
+  } catch (error){
+    throw new Error(error.message);
+  }
+};
+
+const softDeleteMetadata = async (filter,updateBody) =>{  
+  try {
+    const metadataCnt =  await dbService.updateMany(Metadata,filter);
+    return { metadata : metadataCnt };
+  } catch (error){
+    throw new Error(error.message);
+  }
+};
+
 const softDeleteTripuser = async (filter,updateBody) =>{  
   try {
     const tripuserCnt =  await dbService.updateMany(Tripuser,filter);
@@ -337,14 +382,17 @@ const softDeleteUser = async (filter,updateBody) =>{
     if (user.length){
       user = user.map((obj) => obj.id);
 
+      const TripFilter = { '$or': [{ addedBy : { '$in' : user } },{ updatedBy : { '$in' : user } }] };
+      const TripCnt = await dbService.updateMany(Trip,TripFilter,updateBody);
+
+      const metadataFilter = { '$or': [{ addedBy : { '$in' : user } },{ updatedBy : { '$in' : user } }] };
+      const metadataCnt = await dbService.updateMany(Metadata,metadataFilter,updateBody);
+
       const tripuserFilter = { '$or': [{ user : { '$in' : user } },{ updatedBy : { '$in' : user } }] };
       const tripuserCnt = await dbService.updateMany(Tripuser,tripuserFilter,updateBody);
 
       const userFilter = { '$or': [{ addedBy : { '$in' : user } },{ updatedBy : { '$in' : user } }] };
       const userCnt = await dbService.updateMany(User,userFilter,updateBody);
-
-      const bannerFilter = { '$or': [{ addedBy : { '$in' : user } },{ updatedBy : { '$in' : user } },{ sellerId : { '$in' : user } }] };
-      const bannerCnt = await dbService.updateMany(Banner,bannerFilter,updateBody);
 
       const stateFilter = { '$or': [{ addedBy : { '$in' : user } },{ updatedBy : { '$in' : user } }] };
       const stateCnt = await dbService.updateMany(State,stateFilter,updateBody);
@@ -366,9 +414,10 @@ const softDeleteUser = async (filter,updateBody) =>{
       let updated = await dbService.updateMany(User,filter,updateBody);
 
       let response = {
+        Trip :TripCnt,
+        metadata :metadataCnt,
         tripuser :tripuserCnt,
         user :userCnt + updated,
-        banner :bannerCnt,
         state :stateCnt,
         userTokens :userTokensCnt,
         role :roleCnt,
@@ -380,15 +429,6 @@ const softDeleteUser = async (filter,updateBody) =>{
     } else {
       return {  user : 0 };
     }
-  } catch (error){
-    throw new Error(error.message);
-  }
-};
-
-const softDeleteBanner = async (filter,updateBody) =>{  
-  try {
-    const bannerCnt =  await dbService.updateMany(Banner,filter);
-    return { banner : bannerCnt };
   } catch (error){
     throw new Error(error.message);
   }
@@ -477,27 +517,30 @@ const softDeleteUserRole = async (filter,updateBody) =>{
 };
 
 module.exports = {
+  deleteTrip,
+  deleteMetadata,
   deleteTripuser,
   deleteUser,
-  deleteBanner,
   deleteState,
   deleteUserTokens,
   deleteRole,
   deleteProjectRoute,
   deleteRouteRole,
   deleteUserRole,
+  countTrip,
+  countMetadata,
   countTripuser,
   countUser,
-  countBanner,
   countState,
   countUserTokens,
   countRole,
   countProjectRoute,
   countRouteRole,
   countUserRole,
+  softDeleteTrip,
+  softDeleteMetadata,
   softDeleteTripuser,
   softDeleteUser,
-  softDeleteBanner,
   softDeleteState,
   softDeleteUserTokens,
   softDeleteRole,

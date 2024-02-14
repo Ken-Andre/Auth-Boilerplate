@@ -1,6 +1,6 @@
 /**
- * banner.js
- * @description :: model of a database collection banner
+ * Trip.js
+ * @description :: model of a database collection Trip
  */
 
 const mongoose = require('mongoose');
@@ -22,15 +22,7 @@ const Schema = mongoose.Schema;
 const schema = new Schema(
   {
 
-    bannerTitle:{ type:String },
-
-    alternateTitle:{ type:String },
-
-    startDate:{ type:Date },
-
-    endDate:{ type:Date },
-
-    redirectLink:{ type:String },
+    isDeleted:{ type:Boolean },
 
     isActive:{ type:Boolean },
 
@@ -48,12 +40,11 @@ const schema = new Schema(
       ref:'user'
     },
 
-    sellerId:{
-      type:Schema.Types.ObjectId,
-      ref:'user'
-    },
-
-    isDeleted:{ type:Boolean }
+    trip:[{
+      _id:false,
+      StartHour:{ type:String },
+      EndHour:{ type:String }
+    }]
   }
   ,{ 
     timestamps: { 
@@ -89,5 +80,5 @@ schema.method('toJSON', function () {
 });
 schema.plugin(mongoosePaginate);
 schema.plugin(idValidator);
-const banner = mongoose.model('banner',schema);
-module.exports = banner;
+const Trip = mongoose.model('Trip',schema);
+module.exports = Trip;
