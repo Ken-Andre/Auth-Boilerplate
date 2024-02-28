@@ -3,12 +3,12 @@
  * @description : exports action methods for userRole.
  */
 
-const UserRole = require('../../model/userRole');
-const userRoleSchemaKey = require('../../utils/validation/userRoleValidation');
-const validation = require('../../utils/validateRequest');
-const dbService = require('../../utils/dbService');
+const UserRole = require('../../../model/userRole');
+const userRoleSchemaKey = require('../../../utils/validation/userRoleValidation');
+const validation = require('../../../utils/validateRequest');
+const dbService = require('../../../utils/dbService');
 const ObjectId = require('mongodb').ObjectId;
-const utils = require('../../utils/common');
+const utils = require('../../../utils/common');
    
 /**
  * @description : create document of UserRole in mongodb collection.

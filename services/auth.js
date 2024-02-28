@@ -114,16 +114,7 @@ const loginUser = async (username,password,platform,roleAccess) => {
           data:'You have not been assigned any role'
         };
       }
-      if (platform == PLATFORM.ADMIN){
-        if (!LOGIN_ACCESS[user.userType].includes(PLATFORM.ADMIN)){
-          return {
-            flag:true,
-            data:'you are unable to access this platform'
-          };
-        }
-        token = await generateToken(userData,JWT.ADMIN_SECRET);
-      }
-      else if (platform == PLATFORM.DEVICE){
+      if (platform == PLATFORM.DEVICE){
         if (!LOGIN_ACCESS[user.userType].includes(PLATFORM.DEVICE)){
           return {
             flag:true,

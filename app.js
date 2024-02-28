@@ -18,7 +18,6 @@ const listEndpoints = require('express-list-endpoints');
 const passport = require('passport');
 
 let logger = require('morgan');
-const { adminPassportStrategy } = require('./config/adminPassportStrategy');
 const { devicePassportStrategy } = require('./config/devicePassportStrategy');
 const { clientPassportStrategy } = require('./config/clientPassportStrategy');
 const app = express();
@@ -33,7 +32,6 @@ app.use(require('./utils/response/responseHandler'));
 //all routes 
 const routes =  require('./routes');
 
-adminPassportStrategy(passport);
 devicePassportStrategy(passport);
 clientPassportStrategy(passport);
 

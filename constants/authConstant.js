@@ -4,7 +4,6 @@
  */
 
 const JWT = {
-  ADMIN_SECRET:'myjwtadminsecret',
   DEVICE_SECRET:'myjwtdevicesecret',
   CLIENT_SECRET:'myjwtclientsecret',
   EXPIRES_IN: 10000
@@ -16,14 +15,13 @@ const USER_TYPES = {
 };
 
 const PLATFORM = {
-  ADMIN:1,
-  DEVICE:2,
-  CLIENT:3,
+  DEVICE:1,
+  CLIENT:2,
 };
 
 let LOGIN_ACCESS = {
-  [USER_TYPES.Admin]:[PLATFORM.ADMIN],        
   [USER_TYPES.User]:[PLATFORM.DEVICE,PLATFORM.CLIENT],        
+  [USER_TYPES.Admin]:[PLATFORM.CLIENT],        
 };
 
 const MAX_LOGIN_RETRY_LIMIT = 3;

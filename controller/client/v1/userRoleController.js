@@ -1,46 +1,46 @@
 /**
- * metadataController.js
- * @description : exports action methods for metadata.
+ * userRoleController.js
+ * @description : exports action methods for userRole.
  */
 
-const Metadata = require('../../model/metadata');
-const metadataSchemaKey = require('../../utils/validation/metadataValidation');
-const validation = require('../../utils/validateRequest');
-const dbService = require('../../utils/dbService');
+const UserRole = require('../../../model/userRole');
+const userRoleSchemaKey = require('../../../utils/validation/userRoleValidation');
+const validation = require('../../../utils/validateRequest');
+const dbService = require('../../../utils/dbService');
 const ObjectId = require('mongodb').ObjectId;
-const utils = require('../../utils/common');
+const utils = require('../../../utils/common');
    
 /**
- * @description : create document of Metadata in mongodb collection.
+ * @description : create document of UserRole in mongodb collection.
  * @param {Object} req : request including body for creating document.
  * @param {Object} res : response of created document
- * @return {Object} : created Metadata. {status, message, data}
+ * @return {Object} : created UserRole. {status, message, data}
  */ 
-const addMetadata = async (req, res) => {
+const addUserRole = async (req, res) => {
   try {
     let dataToCreate = { ...req.body || {} };
     let validateRequest = validation.validateParamsWithJoi(
       dataToCreate,
-      metadataSchemaKey.schemaKeys);
+      userRoleSchemaKey.schemaKeys);
     if (!validateRequest.isValid) {
       return res.validationError({ message : `Invalid values in parameters, ${validateRequest.message}` });
     }
     dataToCreate.addedBy = req.user.id;
-    dataToCreate = new Metadata(dataToCreate);
-    let createdMetadata = await dbService.create(Metadata,dataToCreate);
-    return res.success({ data : createdMetadata });
+    dataToCreate = new UserRole(dataToCreate);
+    let createdUserRole = await dbService.create(UserRole,dataToCreate);
+    return res.success({ data : createdUserRole });
   } catch (error) {
     return res.internalServerError({ message:error.message }); 
   }
 };
     
 /**
- * @description : create multiple documents of Metadata in mongodb collection.
+ * @description : create multiple documents of UserRole in mongodb collection.
  * @param {Object} req : request including body for creating documents.
  * @param {Object} res : response of created documents.
- * @return {Object} : created Metadatas. {status, message, data}
+ * @return {Object} : created UserRoles. {status, message, data}
  */
-const bulkInsertMetadata = async (req,res)=>{
+const bulkInsertUserRole = async (req,res)=>{
   try {
     if (req.body && (!Array.isArray(req.body.data) || req.body.data.length < 1)) {
       return res.badRequest();
@@ -52,28 +52,28 @@ const bulkInsertMetadata = async (req,res)=>{
         addedBy: req.user.id
       };
     }
-    let createdMetadatas = await dbService.create(Metadata,dataToCreate);
-    createdMetadatas = { count: createdMetadatas ? createdMetadatas.length : 0 };
-    return res.success({ data:{ count:createdMetadatas.count || 0 } });
+    let createdUserRoles = await dbService.create(UserRole,dataToCreate);
+    createdUserRoles = { count: createdUserRoles ? createdUserRoles.length : 0 };
+    return res.success({ data:{ count:createdUserRoles.count || 0 } });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
     
 /**
- * @description : find all documents of Metadata from collection based on query and options.
+ * @description : find all documents of UserRole from collection based on query and options.
  * @param {Object} req : request including option and query. {query, options : {page, limit, pagination, populate}, isCountOnly}
  * @param {Object} res : response contains data found from collection.
- * @return {Object} : found Metadata(s). {status, message, data}
+ * @return {Object} : found UserRole(s). {status, message, data}
  */
-const findAllMetadata = async (req,res) => {
+const findAllUserRole = async (req,res) => {
   try {
     let options = {};
     let query = {};
     let validateRequest = validation.validateFilterWithJoi(
       req.body,
-      metadataSchemaKey.findFilterKeys,
-      Metadata.schema.obj
+      userRoleSchemaKey.findFilterKeys,
+      UserRole.schema.obj
     );
     if (!validateRequest.isValid) {
       return res.validationError({ message: `${validateRequest.message}` });
@@ -82,29 +82,29 @@ const findAllMetadata = async (req,res) => {
       query = { ...req.body.query };
     }
     if (req.body.isCountOnly){
-      let totalRecords = await dbService.count(Metadata, query);
+      let totalRecords = await dbService.count(UserRole, query);
       return res.success({ data: { totalRecords } });
     }
     if (req.body && typeof req.body.options === 'object' && req.body.options !== null) {
       options = { ...req.body.options };
     }
-    let foundMetadatas = await dbService.paginate( Metadata,query,options);
-    if (!foundMetadatas || !foundMetadatas.data || !foundMetadatas.data.length){
+    let foundUserRoles = await dbService.paginate( UserRole,query,options);
+    if (!foundUserRoles || !foundUserRoles.data || !foundUserRoles.data.length){
       return res.recordNotFound(); 
     }
-    return res.success({ data :foundMetadatas });
+    return res.success({ data :foundUserRoles });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
         
 /**
- * @description : find document of Metadata from table by id;
+ * @description : find document of UserRole from table by id;
  * @param {Object} req : request including id in request params.
  * @param {Object} res : response contains document retrieved from table.
- * @return {Object} : found Metadata. {status, message, data}
+ * @return {Object} : found UserRole. {status, message, data}
  */
-const getMetadata = async (req,res) => {
+const getUserRole = async (req,res) => {
   try {
     let query = {};
     if (!ObjectId.isValid(req.params.id)) {
@@ -112,11 +112,11 @@ const getMetadata = async (req,res) => {
     }
     query._id = req.params.id;
     let options = {};
-    let foundMetadata = await dbService.findOne(Metadata,query, options);
-    if (!foundMetadata){
+    let foundUserRole = await dbService.findOne(UserRole,query, options);
+    if (!foundUserRole){
       return res.recordNotFound();
     }
-    return res.success({ data :foundMetadata });
+    return res.success({ data :foundUserRole });
   }
   catch (error){
     return res.internalServerError({ message:error.message });
@@ -124,17 +124,17 @@ const getMetadata = async (req,res) => {
 };
     
 /**
- * @description : returns total number of documents of Metadata.
+ * @description : returns total number of documents of UserRole.
  * @param {Object} req : request including where object to apply filters in req body 
  * @param {Object} res : response that returns total number of documents.
  * @return {Object} : number of documents. {status, message, data}
  */
-const getMetadataCount = async (req,res) => {
+const getUserRoleCount = async (req,res) => {
   try {
     let where = {};
     let validateRequest = validation.validateFilterWithJoi(
       req.body,
-      metadataSchemaKey.findFilterKeys,
+      userRoleSchemaKey.findFilterKeys,
     );
     if (!validateRequest.isValid) {
       return res.validationError({ message: `${validateRequest.message}` });
@@ -142,20 +142,20 @@ const getMetadataCount = async (req,res) => {
     if (typeof req.body.where === 'object' && req.body.where !== null) {
       where = { ...req.body.where };
     }
-    let countedMetadata = await dbService.count(Metadata,where);
-    return res.success({ data : { count: countedMetadata } });
+    let countedUserRole = await dbService.count(UserRole,where);
+    return res.success({ data : { count: countedUserRole } });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
     
 /**
- * @description : update document of Metadata with data by id.
+ * @description : update document of UserRole with data by id.
  * @param {Object} req : request including id in request params and data in request body.
- * @param {Object} res : response of updated Metadata.
- * @return {Object} : updated Metadata. {status, message, data}
+ * @param {Object} res : response of updated UserRole.
+ * @return {Object} : updated UserRole. {status, message, data}
  */
-const updateMetadata = async (req,res) => {
+const updateUserRole = async (req,res) => {
   try {
     let dataToUpdate = {
       ...req.body,
@@ -163,29 +163,29 @@ const updateMetadata = async (req,res) => {
     };
     let validateRequest = validation.validateParamsWithJoi(
       dataToUpdate,
-      metadataSchemaKey.updateSchemaKeys
+      userRoleSchemaKey.updateSchemaKeys
     );
     if (!validateRequest.isValid) {
       return res.validationError({ message : `Invalid values in parameters, ${validateRequest.message}` });
     }
     const query = { _id:req.params.id };
-    let updatedMetadata = await dbService.updateOne(Metadata,query,dataToUpdate);
-    if (!updatedMetadata){
+    let updatedUserRole = await dbService.updateOne(UserRole,query,dataToUpdate);
+    if (!updatedUserRole){
       return res.recordNotFound();
     }
-    return res.success({ data :updatedMetadata });
+    return res.success({ data :updatedUserRole });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
 
 /**
- * @description : update multiple records of Metadata with data by filter.
+ * @description : update multiple records of UserRole with data by filter.
  * @param {Object} req : request including filter and data in request body.
- * @param {Object} res : response of updated Metadatas.
- * @return {Object} : updated Metadatas. {status, message, data}
+ * @param {Object} res : response of updated UserRoles.
+ * @return {Object} : updated UserRoles. {status, message, data}
  */
-const bulkUpdateMetadata = async (req,res)=>{
+const bulkUpdateUserRole = async (req,res)=>{
   try {
     let filter = req.body && req.body.filter ? { ...req.body.filter } : {};
     let dataToUpdate = {};
@@ -196,23 +196,23 @@ const bulkUpdateMetadata = async (req,res)=>{
         updatedBy : req.user.id
       };
     }
-    let updatedMetadata = await dbService.updateMany(Metadata,filter,dataToUpdate);
-    if (!updatedMetadata){
+    let updatedUserRole = await dbService.updateMany(UserRole,filter,dataToUpdate);
+    if (!updatedUserRole){
       return res.recordNotFound();
     }
-    return res.success({ data :{ count : updatedMetadata } });
+    return res.success({ data :{ count : updatedUserRole } });
   } catch (error){
     return res.internalServerError({ message:error.message }); 
   }
 };
     
 /**
- * @description : partially update document of Metadata with data by id;
+ * @description : partially update document of UserRole with data by id;
  * @param {obj} req : request including id in request params and data in request body.
- * @param {obj} res : response of updated Metadata.
- * @return {obj} : updated Metadata. {status, message, data}
+ * @param {obj} res : response of updated UserRole.
+ * @return {obj} : updated UserRole. {status, message, data}
  */
-const partialUpdateMetadata = async (req,res) => {
+const partialUpdateUserRole = async (req,res) => {
   try {
     if (!req.params.id){
       res.badRequest({ message : 'Insufficient request parameters! id is required.' });
@@ -224,28 +224,28 @@ const partialUpdateMetadata = async (req,res) => {
     };
     let validateRequest = validation.validateParamsWithJoi(
       dataToUpdate,
-      metadataSchemaKey.updateSchemaKeys
+      userRoleSchemaKey.updateSchemaKeys
     );
     if (!validateRequest.isValid) {
       return res.validationError({ message : `Invalid values in parameters, ${validateRequest.message}` });
     }
     const query = { _id:req.params.id };
-    let updatedMetadata = await dbService.updateOne(Metadata, query, dataToUpdate);
-    if (!updatedMetadata) {
+    let updatedUserRole = await dbService.updateOne(UserRole, query, dataToUpdate);
+    if (!updatedUserRole) {
       return res.recordNotFound();
     }
-    return res.success({ data:updatedMetadata });
+    return res.success({ data:updatedUserRole });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
 /**
- * @description : deactivate document of Metadata from table by id;
+ * @description : deactivate document of UserRole from table by id;
  * @param {Object} req : request including id in request params.
- * @param {Object} res : response contains updated document of Metadata.
- * @return {Object} : deactivated Metadata. {status, message, data}
+ * @param {Object} res : response contains updated document of UserRole.
+ * @return {Object} : deactivated UserRole. {status, message, data}
  */
-const softDeleteMetadata = async (req,res) => {
+const softDeleteUserRole = async (req,res) => {
   try {
     if (!req.params.id){
       return res.badRequest({ message : 'Insufficient request parameters! id is required.' });
@@ -255,33 +255,33 @@ const softDeleteMetadata = async (req,res) => {
       isDeleted: true,
       updatedBy: req.user.id,
     };
-    let updatedMetadata = await dbService.updateOne(Metadata, query, updateBody);
-    if (!updatedMetadata){
+    let updatedUserRole = await dbService.updateOne(UserRole, query, updateBody);
+    if (!updatedUserRole){
       return res.recordNotFound();
     }
-    return res.success({ data:updatedMetadata });
+    return res.success({ data:updatedUserRole });
   } catch (error){
     return res.internalServerError({ message:error.message }); 
   }
 };
 
 /**
- * @description : delete document of Metadata from table.
+ * @description : delete document of UserRole from table.
  * @param {Object} req : request including id as req param.
  * @param {Object} res : response contains deleted document.
- * @return {Object} : deleted Metadata. {status, message, data}
+ * @return {Object} : deleted UserRole. {status, message, data}
  */
-const deleteMetadata = async (req,res) => {
+const deleteUserRole = async (req,res) => {
   try { 
     if (!req.params.id){
       return res.badRequest({ message : 'Insufficient request parameters! id is required.' });
     }
     const query = { _id:req.params.id };
-    const deletedMetadata = await dbService.deleteOne(Metadata, query);
-    if (!deletedMetadata){
+    const deletedUserRole = await dbService.deleteOne(UserRole, query);
+    if (!deletedUserRole){
       return res.recordNotFound();
     }
-    return res.success({ data :deletedMetadata });
+    return res.success({ data :deletedUserRole });
         
   }
   catch (error){
@@ -290,34 +290,34 @@ const deleteMetadata = async (req,res) => {
 };
     
 /**
- * @description : delete documents of Metadata in table by using ids.
+ * @description : delete documents of UserRole in table by using ids.
  * @param {Object} req : request including array of ids in request body.
  * @param {Object} res : response contains no of documents deleted.
  * @return {Object} : no of documents deleted. {status, message, data}
  */
-const deleteManyMetadata = async (req, res) => {
+const deleteManyUserRole = async (req, res) => {
   try {
     let ids = req.body.ids;
     if (!ids || !Array.isArray(ids) || ids.length < 1) {
       return res.badRequest();
     }
     const query = { _id:{ $in:ids } };
-    const deletedMetadata = await dbService.deleteMany(Metadata,query);
-    if (!deletedMetadata){
+    const deletedUserRole = await dbService.deleteMany(UserRole,query);
+    if (!deletedUserRole){
       return res.recordNotFound();
     }
-    return res.success({ data :{ count :deletedMetadata } });
+    return res.success({ data :{ count :deletedUserRole } });
   } catch (error){
     return res.internalServerError({ message:error.message }); 
   }
 };
 /**
- * @description : deactivate multiple documents of Metadata from table by ids;
+ * @description : deactivate multiple documents of UserRole from table by ids;
  * @param {Object} req : request including array of ids in request body.
- * @param {Object} res : response contains updated documents of Metadata.
- * @return {Object} : number of deactivated documents of Metadata. {status, message, data}
+ * @param {Object} res : response contains updated documents of UserRole.
+ * @return {Object} : number of deactivated documents of UserRole. {status, message, data}
  */
-const softDeleteManyMetadata = async (req,res) => {
+const softDeleteManyUserRole = async (req,res) => {
   try {
     let ids = req.body.ids;
     if (!ids || !Array.isArray(ids) || ids.length < 1) {
@@ -328,11 +328,11 @@ const softDeleteManyMetadata = async (req,res) => {
       isDeleted: true,
       updatedBy: req.user.id,
     };
-    let updatedMetadata = await dbService.updateMany(Metadata,query, updateBody);
-    if (!updatedMetadata) {
+    let updatedUserRole = await dbService.updateMany(UserRole,query, updateBody);
+    if (!updatedUserRole) {
       return res.recordNotFound();
     }
-    return res.success({ data:{ count :updatedMetadata } });
+    return res.success({ data:{ count :updatedUserRole } });
         
   } catch (error){
     return res.internalServerError({ message:error.message }); 
@@ -340,16 +340,16 @@ const softDeleteManyMetadata = async (req,res) => {
 };
 
 module.exports = {
-  addMetadata,
-  bulkInsertMetadata,
-  findAllMetadata,
-  getMetadata,
-  getMetadataCount,
-  updateMetadata,
-  bulkUpdateMetadata,
-  partialUpdateMetadata,
-  softDeleteMetadata,
-  deleteMetadata,
-  deleteManyMetadata,
-  softDeleteManyMetadata    
+  addUserRole,
+  bulkInsertUserRole,
+  findAllUserRole,
+  getUserRole,
+  getUserRoleCount,
+  updateUserRole,
+  bulkUpdateUserRole,
+  partialUpdateUserRole,
+  softDeleteUserRole,
+  deleteUserRole,
+  deleteManyUserRole,
+  softDeleteManyUserRole    
 };

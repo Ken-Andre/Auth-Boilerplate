@@ -30,16 +30,15 @@ beforeAll(async function (){
 
     const user = dbInstance.collection('users');
     insertedUser = await user.insertOne({
-      username: 'Brad36',
-      password: 'uDfuzsPi3Ltaj5x',
-      email: 'Doris_Legros@gmail.com',
-      name: 'Chelsea Hilpert',
-      userType: 627,
-      mobileNo: '(142) 712-7169',
+      username: 'Muriel.Lebsack39',
+      password: 'wlMXUccPndl5p77',
+      email: 'Derek84@gmail.com',
+      userType: 457,
+      mobileNo: '(704) 148-3361',
       resetPasswordLink: {},
-      loginRetryLimit: 662,
-      loginReactiveTime: '2024-02-24T01:38:34.743Z',
-      id: '65ccaa3e14098c00c947deeb'
+      loginRetryLimit: 35,
+      loginReactiveTime: '2024-08-28T10:09:21.459Z',
+      id: '65dea016f4251a038b1bf113'
     });
   }
   catch (error) {
@@ -57,12 +56,11 @@ describe('POST /register -> if email and username is given', () => {
     let registeredUser = await request(app)
       .post('/device/auth/register')
       .send({
-        'username':'Raegan75',
-        'password':'GlBkd65sWh_DWQx',
-        'email':'Jessica95@yahoo.com',
-        'name':'Franklin Dietrich',
+        'username':'Tyrell89',
+        'password':'2dkSja2A40ZddwN',
+        'email':'Kaycee.Mayer@hotmail.com',
         'userType':authConstant.USER_TYPES.User,
-        'mobileNo':'(866) 619-7228',
+        'mobileNo':'(928) 988-7132',
         'addedBy':insertedUser.insertedId,
         'updatedBy':insertedUser.insertedId
       });
@@ -78,8 +76,8 @@ describe('POST /login -> if username and password is correct', () => {
       .post('/device/auth/login')
       .send(
         {
-          username: 'Raegan75',
-          password: 'GlBkd65sWh_DWQx'
+          username: 'Tyrell89',
+          password: '2dkSja2A40ZddwN'
         }
       );
     expect(user.statusCode).toBe(200);
@@ -98,7 +96,7 @@ describe('POST /login -> if username is incorrect', () => {
       .send(
         {
           username: 'wrong.username',
-          password: 'GlBkd65sWh_DWQx'
+          password: '2dkSja2A40ZddwN'
         }
       );
 
@@ -113,7 +111,7 @@ describe('POST /login -> if password is incorrect', () => {
       .post('/device/auth/login')
       .send(
         {
-          username: 'Raegan75',
+          username: 'Tyrell89',
           password: 'wrong@password'
         }
       );
@@ -160,7 +158,7 @@ describe('POST /forgot-password -> if email passed from request body is valid an
   test('should return success message', async () => {
     let user = await request(app)
       .post('/device/auth/forgot-password')
-      .send({ 'email':'Jessica95@yahoo.com', });
+      .send({ 'email':'Kaycee.Mayer@hotmail.com', });
 
     expect(user.statusCode).toBe(200);
     expect(user.body.status).toBe('SUCCESS');
@@ -173,8 +171,8 @@ describe('POST /validate-otp -> OTP is sent in request body and OTP is correct',
       .post('/device/auth/login')
       .send(
         {
-          username: 'Raegan75',
-          password: 'GlBkd65sWh_DWQx'
+          username: 'Tyrell89',
+          password: '2dkSja2A40ZddwN'
         }).then(login => () => {
         return request(app)
           .get(`/device/api/v1/user/${login.body.data.id}`)
@@ -222,8 +220,8 @@ describe('PUT /reset-password -> code is sent in request body and code is correc
       .post('/device/auth/login')
       .send(
         {
-          username: 'Raegan75',
-          password: 'GlBkd65sWh_DWQx'
+          username: 'Tyrell89',
+          password: '2dkSja2A40ZddwN'
         }).then(login => () => {
         return request(app)
           .get(`/device/api/v1/user/${login.body.data.id}`)

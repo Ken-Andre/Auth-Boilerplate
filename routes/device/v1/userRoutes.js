@@ -12,9 +12,11 @@ const checkRolePermission = require('../../../middleware/checkRolePermission');
 
 router.route('/device/api/v1/user/me').get(auth(PLATFORM.DEVICE),userController.getLoggedInUserInfo);
 router.route('/device/api/v1/user/create').post(auth(PLATFORM.DEVICE),checkRolePermission,userController.addUser);
+router.route('/device/api/v1/user/list').post(auth(PLATFORM.DEVICE),checkRolePermission,userController.findAllUser);
+router.route('/device/api/v1/user/count').post(auth(PLATFORM.DEVICE),checkRolePermission,userController.getUserCount);
+router.route('/device/api/v1/user/:id').get(auth(PLATFORM.DEVICE),checkRolePermission,userController.getUser);
 router.route('/device/api/v1/user/update/:id').put(auth(PLATFORM.DEVICE),checkRolePermission,userController.updateUser);    
 router.route('/device/api/v1/user/partial-update/:id').put(auth(PLATFORM.DEVICE),checkRolePermission,userController.partialUpdateUser);
-router.route('/device/api/v1/user/updateBulk').put(auth(PLATFORM.DEVICE),checkRolePermission,userController.bulkUpdateUser);
 router.route('/device/api/v1/user/change-password').put(auth(PLATFORM.DEVICE),userController.changePassword);
 router.route('/device/api/v1/user/update-profile').put(auth(PLATFORM.DEVICE),userController.updateProfile);
 

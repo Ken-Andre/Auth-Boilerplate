@@ -33,9 +33,10 @@ const schema = new Schema(
 
     email:{ type:String },
 
-    name:{ type:String },
-
-    isActive:{ type:Boolean },
+    isActive:{
+      type:Boolean,
+      default:false
+    },
 
     createdAt:{ type:Date },
 
@@ -53,8 +54,9 @@ const schema = new Schema(
 
     userType:{
       type:Number,
-      enum:convertObjectToEnum(USER_TYPES),
-      required:true
+      enum:authConstantEnum.USER_TYPES,
+      required:true,
+      default:authConstantEnum.USER_TYPES['User']
     },
 
     mobileNo:{ type:String },

@@ -60,6 +60,99 @@ const addUser = async (req, res) => {
 };
     
 /**
+ * @description : find all documents of User from collection based on query and options.
+ * @param {Object} req : request including option and query. {query, options : {page, limit, pagination, populate}, isCountOnly}
+ * @param {Object} res : response contains data found from collection.
+ * @return {Object} : found User(s). {status, message, data}
+ */
+const findAllUser = async (req,res) => {
+  try {
+    let options = {};
+    let query = {};
+    let validateRequest = validation.validateFilterWithJoi(
+      req.body,
+      userSchemaKey.findFilterKeys,
+      User.schema.obj
+    );
+    if (!validateRequest.isValid) {
+      return res.validationError({ message: `${validateRequest.message}` });
+    }
+    if (typeof req.body.query === 'object' && req.body.query !== null) {
+      query = { ...req.body.query };
+    }
+    query._id = { $ne: req.user.id };
+    if (req.body && req.body.query && req.body.query._id) {
+      query._id.$in = [req.body.query._id];
+    }
+    if (req.body.isCountOnly){
+      let totalRecords = await dbService.count(User, query);
+      return res.success({ data: { totalRecords } });
+    }
+    if (req.body && typeof req.body.options === 'object' && req.body.options !== null) {
+      options = { ...req.body.options };
+    }
+    let foundUsers = await dbService.paginate( User,query,options);
+    if (!foundUsers || !foundUsers.data || !foundUsers.data.length){
+      return res.recordNotFound(); 
+    }
+    return res.success({ data :foundUsers });
+  } catch (error){
+    return res.internalServerError({ message:error.message });
+  }
+};
+        
+/**
+ * @description : find document of User from table by id;
+ * @param {Object} req : request including id in request params.
+ * @param {Object} res : response contains document retrieved from table.
+ * @return {Object} : found User. {status, message, data}
+ */
+const getUser = async (req,res) => {
+  try {
+    let query = {};
+    if (!ObjectId.isValid(req.params.id)) {
+      return res.validationError({ message : 'invalid objectId.' });
+    }
+    query._id = req.params.id;
+    let options = {};
+    let foundUser = await dbService.findOne(User,query, options);
+    if (!foundUser){
+      return res.recordNotFound();
+    }
+    return res.success({ data :foundUser });
+  }
+  catch (error){
+    return res.internalServerError({ message:error.message });
+  }
+};
+    
+/**
+ * @description : returns total number of documents of User.
+ * @param {Object} req : request including where object to apply filters in req body 
+ * @param {Object} res : response that returns total number of documents.
+ * @return {Object} : number of documents. {status, message, data}
+ */
+const getUserCount = async (req,res) => {
+  try {
+    let where = {};
+    let validateRequest = validation.validateFilterWithJoi(
+      req.body,
+      userSchemaKey.findFilterKeys,
+    );
+    if (!validateRequest.isValid) {
+      return res.validationError({ message: `${validateRequest.message}` });
+    }
+    if (typeof req.body.where === 'object' && req.body.where !== null) {
+      where = { ...req.body.where };
+    }
+    let countedUser = await dbService.count(User,where);
+    return res.success({ data : { count: countedUser } });
+  } catch (error){
+    return res.internalServerError({ message:error.message });
+  }
+};
+    
+/**
  * @description : update document of User with data by id.
  * @param {Object} req : request including id in request params and data in request body.
  * @param {Object} res : response of updated User.
@@ -91,33 +184,6 @@ const updateUser = async (req,res) => {
     return res.success({ data :updatedUser });
   } catch (error){
     return res.internalServerError({ message:error.message });
-  }
-};
-
-/**
- * @description : update multiple records of User with data by filter.
- * @param {Object} req : request including filter and data in request body.
- * @param {Object} res : response of updated Users.
- * @return {Object} : updated Users. {status, message, data}
- */
-const bulkUpdateUser = async (req,res)=>{
-  try {
-    let filter = req.body && req.body.filter ? { ...req.body.filter } : {};
-    let dataToUpdate = {};
-    delete dataToUpdate['addedBy'];
-    if (req.body && typeof req.body.data === 'object' && req.body.data !== null) {
-      dataToUpdate = { 
-        ...req.body.data,
-        updatedBy : req.user.id
-      };
-    }
-    let updatedUser = await dbService.updateMany(User,filter,dataToUpdate);
-    if (!updatedUser){
-      return res.recordNotFound();
-    }
-    return res.success({ data :{ count : updatedUser } });
-  } catch (error){
-    return res.internalServerError({ message:error.message }); 
   }
 };
     
@@ -223,8 +289,10 @@ const updateProfile = async (req, res) => {
 module.exports = {
   getLoggedInUserInfo,
   addUser,
+  findAllUser,
+  getUser,
+  getUserCount,
   updateUser,
-  bulkUpdateUser,
   partialUpdateUser,
   changePassword,
   updateProfile    

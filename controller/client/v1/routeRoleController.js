@@ -1,46 +1,46 @@
 /**
- * stateController.js
- * @description : exports action methods for state.
+ * routeRoleController.js
+ * @description : exports action methods for routeRole.
  */
 
-const State = require('../../model/state');
-const stateSchemaKey = require('../../utils/validation/stateValidation');
-const validation = require('../../utils/validateRequest');
-const dbService = require('../../utils/dbService');
+const RouteRole = require('../../../model/routeRole');
+const routeRoleSchemaKey = require('../../../utils/validation/routeRoleValidation');
+const validation = require('../../../utils/validateRequest');
+const dbService = require('../../../utils/dbService');
 const ObjectId = require('mongodb').ObjectId;
-const utils = require('../../utils/common');
+const utils = require('../../../utils/common');
    
 /**
- * @description : create document of State in mongodb collection.
+ * @description : create document of RouteRole in mongodb collection.
  * @param {Object} req : request including body for creating document.
  * @param {Object} res : response of created document
- * @return {Object} : created State. {status, message, data}
+ * @return {Object} : created RouteRole. {status, message, data}
  */ 
-const addState = async (req, res) => {
+const addRouteRole = async (req, res) => {
   try {
     let dataToCreate = { ...req.body || {} };
     let validateRequest = validation.validateParamsWithJoi(
       dataToCreate,
-      stateSchemaKey.schemaKeys);
+      routeRoleSchemaKey.schemaKeys);
     if (!validateRequest.isValid) {
       return res.validationError({ message : `Invalid values in parameters, ${validateRequest.message}` });
     }
     dataToCreate.addedBy = req.user.id;
-    dataToCreate = new State(dataToCreate);
-    let createdState = await dbService.create(State,dataToCreate);
-    return res.success({ data : createdState });
+    dataToCreate = new RouteRole(dataToCreate);
+    let createdRouteRole = await dbService.create(RouteRole,dataToCreate);
+    return res.success({ data : createdRouteRole });
   } catch (error) {
     return res.internalServerError({ message:error.message }); 
   }
 };
     
 /**
- * @description : create multiple documents of State in mongodb collection.
+ * @description : create multiple documents of RouteRole in mongodb collection.
  * @param {Object} req : request including body for creating documents.
  * @param {Object} res : response of created documents.
- * @return {Object} : created States. {status, message, data}
+ * @return {Object} : created RouteRoles. {status, message, data}
  */
-const bulkInsertState = async (req,res)=>{
+const bulkInsertRouteRole = async (req,res)=>{
   try {
     if (req.body && (!Array.isArray(req.body.data) || req.body.data.length < 1)) {
       return res.badRequest();
@@ -52,28 +52,28 @@ const bulkInsertState = async (req,res)=>{
         addedBy: req.user.id
       };
     }
-    let createdStates = await dbService.create(State,dataToCreate);
-    createdStates = { count: createdStates ? createdStates.length : 0 };
-    return res.success({ data:{ count:createdStates.count || 0 } });
+    let createdRouteRoles = await dbService.create(RouteRole,dataToCreate);
+    createdRouteRoles = { count: createdRouteRoles ? createdRouteRoles.length : 0 };
+    return res.success({ data:{ count:createdRouteRoles.count || 0 } });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
     
 /**
- * @description : find all documents of State from collection based on query and options.
+ * @description : find all documents of RouteRole from collection based on query and options.
  * @param {Object} req : request including option and query. {query, options : {page, limit, pagination, populate}, isCountOnly}
  * @param {Object} res : response contains data found from collection.
- * @return {Object} : found State(s). {status, message, data}
+ * @return {Object} : found RouteRole(s). {status, message, data}
  */
-const findAllState = async (req,res) => {
+const findAllRouteRole = async (req,res) => {
   try {
     let options = {};
     let query = {};
     let validateRequest = validation.validateFilterWithJoi(
       req.body,
-      stateSchemaKey.findFilterKeys,
-      State.schema.obj
+      routeRoleSchemaKey.findFilterKeys,
+      RouteRole.schema.obj
     );
     if (!validateRequest.isValid) {
       return res.validationError({ message: `${validateRequest.message}` });
@@ -82,29 +82,29 @@ const findAllState = async (req,res) => {
       query = { ...req.body.query };
     }
     if (req.body.isCountOnly){
-      let totalRecords = await dbService.count(State, query);
+      let totalRecords = await dbService.count(RouteRole, query);
       return res.success({ data: { totalRecords } });
     }
     if (req.body && typeof req.body.options === 'object' && req.body.options !== null) {
       options = { ...req.body.options };
     }
-    let foundStates = await dbService.paginate( State,query,options);
-    if (!foundStates || !foundStates.data || !foundStates.data.length){
+    let foundRouteRoles = await dbService.paginate( RouteRole,query,options);
+    if (!foundRouteRoles || !foundRouteRoles.data || !foundRouteRoles.data.length){
       return res.recordNotFound(); 
     }
-    return res.success({ data :foundStates });
+    return res.success({ data :foundRouteRoles });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
         
 /**
- * @description : find document of State from table by id;
+ * @description : find document of RouteRole from table by id;
  * @param {Object} req : request including id in request params.
  * @param {Object} res : response contains document retrieved from table.
- * @return {Object} : found State. {status, message, data}
+ * @return {Object} : found RouteRole. {status, message, data}
  */
-const getState = async (req,res) => {
+const getRouteRole = async (req,res) => {
   try {
     let query = {};
     if (!ObjectId.isValid(req.params.id)) {
@@ -112,11 +112,11 @@ const getState = async (req,res) => {
     }
     query._id = req.params.id;
     let options = {};
-    let foundState = await dbService.findOne(State,query, options);
-    if (!foundState){
+    let foundRouteRole = await dbService.findOne(RouteRole,query, options);
+    if (!foundRouteRole){
       return res.recordNotFound();
     }
-    return res.success({ data :foundState });
+    return res.success({ data :foundRouteRole });
   }
   catch (error){
     return res.internalServerError({ message:error.message });
@@ -124,17 +124,17 @@ const getState = async (req,res) => {
 };
     
 /**
- * @description : returns total number of documents of State.
+ * @description : returns total number of documents of RouteRole.
  * @param {Object} req : request including where object to apply filters in req body 
  * @param {Object} res : response that returns total number of documents.
  * @return {Object} : number of documents. {status, message, data}
  */
-const getStateCount = async (req,res) => {
+const getRouteRoleCount = async (req,res) => {
   try {
     let where = {};
     let validateRequest = validation.validateFilterWithJoi(
       req.body,
-      stateSchemaKey.findFilterKeys,
+      routeRoleSchemaKey.findFilterKeys,
     );
     if (!validateRequest.isValid) {
       return res.validationError({ message: `${validateRequest.message}` });
@@ -142,132 +142,146 @@ const getStateCount = async (req,res) => {
     if (typeof req.body.where === 'object' && req.body.where !== null) {
       where = { ...req.body.where };
     }
-    let countedState = await dbService.count(State,where);
-    return res.success({ data : { count: countedState } });
+    let countedRouteRole = await dbService.count(RouteRole,where);
+    return res.success({ data : { count: countedRouteRole } });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
     
 /**
- * @description : update document of State with data by id.
+ * @description : update document of RouteRole with data by id.
  * @param {Object} req : request including id in request params and data in request body.
- * @param {Object} res : response of updated State.
- * @return {Object} : updated State. {status, message, data}
+ * @param {Object} res : response of updated RouteRole.
+ * @return {Object} : updated RouteRole. {status, message, data}
  */
-const updateState = async (req,res) => {
+const updateRouteRole = async (req,res) => {
   try {
-    let dataToUpdate = { ...req.body, };
+    let dataToUpdate = {
+      ...req.body,
+      updatedBy:req.user.id,
+    };
     let validateRequest = validation.validateParamsWithJoi(
       dataToUpdate,
-      stateSchemaKey.updateSchemaKeys
+      routeRoleSchemaKey.updateSchemaKeys
     );
     if (!validateRequest.isValid) {
       return res.validationError({ message : `Invalid values in parameters, ${validateRequest.message}` });
     }
     const query = { _id:req.params.id };
-    let updatedState = await dbService.updateOne(State,query,dataToUpdate);
-    if (!updatedState){
+    let updatedRouteRole = await dbService.updateOne(RouteRole,query,dataToUpdate);
+    if (!updatedRouteRole){
       return res.recordNotFound();
     }
-    return res.success({ data :updatedState });
+    return res.success({ data :updatedRouteRole });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
 
 /**
- * @description : update multiple records of State with data by filter.
+ * @description : update multiple records of RouteRole with data by filter.
  * @param {Object} req : request including filter and data in request body.
- * @param {Object} res : response of updated States.
- * @return {Object} : updated States. {status, message, data}
+ * @param {Object} res : response of updated RouteRoles.
+ * @return {Object} : updated RouteRoles. {status, message, data}
  */
-const bulkUpdateState = async (req,res)=>{
+const bulkUpdateRouteRole = async (req,res)=>{
   try {
     let filter = req.body && req.body.filter ? { ...req.body.filter } : {};
     let dataToUpdate = {};
+    delete dataToUpdate['addedBy'];
     if (req.body && typeof req.body.data === 'object' && req.body.data !== null) {
-      dataToUpdate = { ...req.body.data, };
+      dataToUpdate = { 
+        ...req.body.data,
+        updatedBy : req.user.id
+      };
     }
-    let updatedState = await dbService.updateMany(State,filter,dataToUpdate);
-    if (!updatedState){
+    let updatedRouteRole = await dbService.updateMany(RouteRole,filter,dataToUpdate);
+    if (!updatedRouteRole){
       return res.recordNotFound();
     }
-    return res.success({ data :{ count : updatedState } });
+    return res.success({ data :{ count : updatedRouteRole } });
   } catch (error){
     return res.internalServerError({ message:error.message }); 
   }
 };
     
 /**
- * @description : partially update document of State with data by id;
+ * @description : partially update document of RouteRole with data by id;
  * @param {obj} req : request including id in request params and data in request body.
- * @param {obj} res : response of updated State.
- * @return {obj} : updated State. {status, message, data}
+ * @param {obj} res : response of updated RouteRole.
+ * @return {obj} : updated RouteRole. {status, message, data}
  */
-const partialUpdateState = async (req,res) => {
+const partialUpdateRouteRole = async (req,res) => {
   try {
     if (!req.params.id){
       res.badRequest({ message : 'Insufficient request parameters! id is required.' });
     }
-    let dataToUpdate = { ...req.body, };
+    delete req.body['addedBy'];
+    let dataToUpdate = {
+      ...req.body,
+      updatedBy:req.user.id,
+    };
     let validateRequest = validation.validateParamsWithJoi(
       dataToUpdate,
-      stateSchemaKey.updateSchemaKeys
+      routeRoleSchemaKey.updateSchemaKeys
     );
     if (!validateRequest.isValid) {
       return res.validationError({ message : `Invalid values in parameters, ${validateRequest.message}` });
     }
     const query = { _id:req.params.id };
-    let updatedState = await dbService.updateOne(State, query, dataToUpdate);
-    if (!updatedState) {
+    let updatedRouteRole = await dbService.updateOne(RouteRole, query, dataToUpdate);
+    if (!updatedRouteRole) {
       return res.recordNotFound();
     }
-    return res.success({ data:updatedState });
+    return res.success({ data:updatedRouteRole });
   } catch (error){
     return res.internalServerError({ message:error.message });
   }
 };
 /**
- * @description : deactivate document of State from table by id;
+ * @description : deactivate document of RouteRole from table by id;
  * @param {Object} req : request including id in request params.
- * @param {Object} res : response contains updated document of State.
- * @return {Object} : deactivated State. {status, message, data}
+ * @param {Object} res : response contains updated document of RouteRole.
+ * @return {Object} : deactivated RouteRole. {status, message, data}
  */
-const softDeleteState = async (req,res) => {
+const softDeleteRouteRole = async (req,res) => {
   try {
     if (!req.params.id){
       return res.badRequest({ message : 'Insufficient request parameters! id is required.' });
     }
     let query = { _id:req.params.id };
-    const updateBody = { isDeleted: true, };
-    let updatedState = await dbService.updateOne(State, query, updateBody);
-    if (!updatedState){
+    const updateBody = {
+      isDeleted: true,
+      updatedBy: req.user.id,
+    };
+    let updatedRouteRole = await dbService.updateOne(RouteRole, query, updateBody);
+    if (!updatedRouteRole){
       return res.recordNotFound();
     }
-    return res.success({ data:updatedState });
+    return res.success({ data:updatedRouteRole });
   } catch (error){
     return res.internalServerError({ message:error.message }); 
   }
 };
 
 /**
- * @description : delete document of State from table.
+ * @description : delete document of RouteRole from table.
  * @param {Object} req : request including id as req param.
  * @param {Object} res : response contains deleted document.
- * @return {Object} : deleted State. {status, message, data}
+ * @return {Object} : deleted RouteRole. {status, message, data}
  */
-const deleteState = async (req,res) => {
+const deleteRouteRole = async (req,res) => {
   try { 
     if (!req.params.id){
       return res.badRequest({ message : 'Insufficient request parameters! id is required.' });
     }
     const query = { _id:req.params.id };
-    const deletedState = await dbService.deleteOne(State, query);
-    if (!deletedState){
+    const deletedRouteRole = await dbService.deleteOne(RouteRole, query);
+    if (!deletedRouteRole){
       return res.recordNotFound();
     }
-    return res.success({ data :deletedState });
+    return res.success({ data :deletedRouteRole });
         
   }
   catch (error){
@@ -276,46 +290,49 @@ const deleteState = async (req,res) => {
 };
     
 /**
- * @description : delete documents of State in table by using ids.
+ * @description : delete documents of RouteRole in table by using ids.
  * @param {Object} req : request including array of ids in request body.
  * @param {Object} res : response contains no of documents deleted.
  * @return {Object} : no of documents deleted. {status, message, data}
  */
-const deleteManyState = async (req, res) => {
+const deleteManyRouteRole = async (req, res) => {
   try {
     let ids = req.body.ids;
     if (!ids || !Array.isArray(ids) || ids.length < 1) {
       return res.badRequest();
     }
     const query = { _id:{ $in:ids } };
-    const deletedState = await dbService.deleteMany(State,query);
-    if (!deletedState){
+    const deletedRouteRole = await dbService.deleteMany(RouteRole,query);
+    if (!deletedRouteRole){
       return res.recordNotFound();
     }
-    return res.success({ data :{ count :deletedState } });
+    return res.success({ data :{ count :deletedRouteRole } });
   } catch (error){
     return res.internalServerError({ message:error.message }); 
   }
 };
 /**
- * @description : deactivate multiple documents of State from table by ids;
+ * @description : deactivate multiple documents of RouteRole from table by ids;
  * @param {Object} req : request including array of ids in request body.
- * @param {Object} res : response contains updated documents of State.
- * @return {Object} : number of deactivated documents of State. {status, message, data}
+ * @param {Object} res : response contains updated documents of RouteRole.
+ * @return {Object} : number of deactivated documents of RouteRole. {status, message, data}
  */
-const softDeleteManyState = async (req,res) => {
+const softDeleteManyRouteRole = async (req,res) => {
   try {
     let ids = req.body.ids;
     if (!ids || !Array.isArray(ids) || ids.length < 1) {
       return res.badRequest();
     }
     const query = { _id:{ $in:ids } };
-    const updateBody = { isDeleted: true, };
-    let updatedState = await dbService.updateMany(State,query, updateBody);
-    if (!updatedState) {
+    const updateBody = {
+      isDeleted: true,
+      updatedBy: req.user.id,
+    };
+    let updatedRouteRole = await dbService.updateMany(RouteRole,query, updateBody);
+    if (!updatedRouteRole) {
       return res.recordNotFound();
     }
-    return res.success({ data:{ count :updatedState } });
+    return res.success({ data:{ count :updatedRouteRole } });
         
   } catch (error){
     return res.internalServerError({ message:error.message }); 
@@ -323,16 +340,16 @@ const softDeleteManyState = async (req,res) => {
 };
 
 module.exports = {
-  addState,
-  bulkInsertState,
-  findAllState,
-  getState,
-  getStateCount,
-  updateState,
-  bulkUpdateState,
-  partialUpdateState,
-  softDeleteState,
-  deleteState,
-  deleteManyState,
-  softDeleteManyState    
+  addRouteRole,
+  bulkInsertRouteRole,
+  findAllRouteRole,
+  getRouteRole,
+  getRouteRoleCount,
+  updateRouteRole,
+  bulkUpdateRouteRole,
+  partialUpdateRouteRole,
+  softDeleteRouteRole,
+  deleteRouteRole,
+  deleteManyRouteRole,
+  softDeleteManyRouteRole    
 };

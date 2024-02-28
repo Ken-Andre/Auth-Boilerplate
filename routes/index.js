@@ -5,9 +5,22 @@
 
 const express = require('express');
 const router =  express.Router();
+const rateLimit = require('express-rate-limit');
 
-router.use(require('./admin/index'));
-router.use(require('./device/v1/index'));
-router.use(require('./client/v1/index'));
+const rateLimiter = rateLimit({
+  windowMs:1000 * 60 * 1000,
+  max:15,
+  message:'Rate limit exceeded, please try again after 1000 minutes',
+  skip: (req) => {
+    if (req.url.includes('/swagger') || req.url.includes('/favicon')) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+});
+
+router.use(rateLimiter,require('./device/v1/index'));  
+router.use(rateLimiter,require('./client/v1/index'));  
 
 module.exports = router;

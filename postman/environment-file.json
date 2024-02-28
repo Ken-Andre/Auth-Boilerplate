@@ -1,5 +1,5 @@
 {
-  "id": "b707f572-c377-411c-8c83-a60177233ffc",
+  "id": "7794fe65-8827-4eee-8579-e51958a6fcf4",
   "name": "authboilerplate_environment",
   "values": [
     {
@@ -14,6 +14,6 @@
     }
   ],
   "_postman_variable_scope": "environment",
-  "_postman_exported_at": "2024-02-14T11:55:42.103Z",
+  "_postman_exported_at": "2024-02-28T02:53:10.765Z",
   "_postman_exported_using": "Postman"
 }
